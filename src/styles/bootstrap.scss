@@ -1,0 +1,17 @@
+// Import des fonctions
+@import 'bootstrap/scss/functions';
+
+// 🌈 Personnalise ici les variables Bootstrap si tu veux
+// Exemple :
+$primary: #3b82f6;
+$success: #22c55e;
+$warning: #facc15;
+$danger: #f43f5e;
+$info: #38bdf8;
+$body-bg: #f0f9ff;
+$body-color: #0f172a;
+
+// Puis importe les autres parties de Bootstrap& variables Bootstrap
+@import 'bootstrap/scss/variables';
+
+@import 'bootstrap/scss/bootstrap';
