@@ -1,8 +1,5 @@
+import { Container } from 'react-bootstrap'
 function Footer() {
-  return (
-    <>
-      <div>footer</div>
-    </>
-  )
+  return <Container>Footer</Container>
 }
 export default Footer
