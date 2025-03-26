@@ -4,6 +4,7 @@ function VehiculeForm({ show, closeModalVehicule }) {
   const [datas, setDatas] = useState({
     marque: '',
     modele: '',
+    immatriculation: '',
     carburant: '',
   })
 
@@ -16,6 +17,7 @@ function VehiculeForm({ show, closeModalVehicule }) {
 
   const handleSubmit = e => {
     e.preventDefault()
+    closeModalVehicule(datas)
   }
   return (
     <Modal show={show} onHide={closeModalVehicule}>
@@ -30,6 +32,7 @@ function VehiculeForm({ show, closeModalVehicule }) {
               placeholder="Marque du véhicule"
               name="marque"
               onChange={handleChange}
+              required
             />
           </Form.Group>
           <Form.Group className="mb-2">
@@ -38,6 +41,16 @@ function VehiculeForm({ show, closeModalVehicule }) {
               placeholder="Modèle du véhicule"
               name="modele"
               onChange={handleChange}
+              required
+            />
+          </Form.Group>
+          <Form.Group className="mb-2">
+            <Form.Control
+              type="text"
+              placeholder="Immatriculation"
+              name="immatriculation"
+              onChange={handleChange}
+              required
             />
           </Form.Group>
           <Form.Select className="mb-2" name="carburant" onChange={handleChange}>
@@ -45,6 +58,7 @@ function VehiculeForm({ show, closeModalVehicule }) {
             <option value="essence">Essence</option>
             <option value="gasoil">Gasoil</option>
             <option value="hybride">Hybride</option>
+            required
           </Form.Select>
           <Button type="submit">Valider</Button>
         </Form>

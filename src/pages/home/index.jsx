@@ -1,6 +1,7 @@
-import { Container, Alert, Button } from 'react-bootstrap'
+import { Container, Alert, Button, Card } from 'react-bootstrap'
 import { useState, useEffect } from 'react'
 import VehiculeForm from '../../components/vehiculeForm'
+import Vehicule from '../vehicule'
 
 function Home() {
   const [vehicule, setVehicule] = useState({})
@@ -19,8 +20,12 @@ function Home() {
   const showModalVehicule = () => {
     setModalVehicule(true)
   }
-  const closeModalVehicule = () => {
+  const closeModalVehicule = datas => {
     setModalVehicule(false)
+    setVehicule(datas)
+    console.log('retour au parent du véhicule:')
+    console.log(datas)
+    localStorage.setItem('vehicule', JSON.stringify(datas))
   }
 
   return (
@@ -32,11 +37,17 @@ function Home() {
             Déclarer un véhicule
           </Button>
           {modalVehicule && (
-            <VehiculeForm show={modalVehicule} closeModalVehicule={() => closeModalVehicule()} />
+            <VehiculeForm
+              show={modalVehicule}
+              closeModalVehicule={datas => closeModalVehicule(datas)}
+            />
           )}
         </>
       ) : (
-        ''
+        <div className="d-flex m-2">
+          <Vehicule vehicule={vehicule} />
+          <Button variant="primary">Ajouter un plein</Button>
+        </div>
       )}
     </Container>
   )
