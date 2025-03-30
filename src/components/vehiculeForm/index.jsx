@@ -6,6 +6,7 @@ function VehiculeForm({ show, closeModalVehicule }) {
     modele: '',
     immatriculation: '',
     carburant: '',
+    pleins: [],
   })
 
   const handleChange = e => {
