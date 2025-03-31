@@ -5,7 +5,7 @@ function HistoPleins({ pleins }) {
   return (
     <>
       {pleins.map((plein, index) => (
-        <Card key={index}>
+        <Card className="m-4" key={index}>
           <Card.Body>
             <Card.Title>{`Le ${plein.date} à ${plein.kilometrage}`}</Card.Title>
             <Card.Text>{`${plein.volume} L. pour ${plein.prix} €`}</Card.Text>
