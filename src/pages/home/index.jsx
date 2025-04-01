@@ -1,9 +1,11 @@
 import { Container, Alert, Button, Card } from 'react-bootstrap'
 import { useState, useEffect } from 'react'
 import VehiculeForm from '../../components/vehiculeForm'
-import Vehicule from '../vehicule'
+import Vehicule from '../../components/vehicule'
 import PleinForm from '../../components/pleinForm'
 import HistoPleins from '../../components/histoPleins'
+import GraphKilometrageEvolution from '../../components/graphKilometrage'
+import GraphPrixLitre from '../../components/graphPrixLitre'
 
 function Home() {
   const [vehicule, setVehicule] = useState({})
@@ -36,8 +38,10 @@ function Home() {
     setModalPlein(true)
   }
   const closeModalPlein = datas => {
-    console.log(datas, vehicule)
     setModalPlein(false)
+
+    if (!datas) return
+    console.log(datas, vehicule)
     let newDatas = []
     try {
       const pleins = vehicule.pleins
@@ -63,7 +67,7 @@ function Home() {
   }
 
   return (
-    <Container className="m-2">
+    <Container className="w-100">
       {!Object.keys(vehicule).length ? (
         <>
           <Alert variant="warning">Aucun véhicule identifié</Alert>
@@ -79,14 +83,16 @@ function Home() {
         </>
       ) : (
         <div>
-          <div className="d-flex m-2">
-            <Vehicule vehicule={vehicule} />
+          <div className="p-2 d-flex w-100">
+            <Vehicule vehicule={vehicule} className="flex-grow-1" />
             <Button variant="primary" onClick={showModalPlein}>
               Ajouter un plein
             </Button>
           </div>
           {modalPlein && <PleinForm showModal={modalPlein} closeModalPlein={closeModalPlein} />}
           <HistoPleins pleins={vehicule.pleins} />
+          <GraphKilometrageEvolution pleins={vehicule.pleins} />
+          <GraphPrixLitre pleins={vehicule.pleins} />
         </div>
       )}
     </Container>

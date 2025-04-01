@@ -11,7 +11,7 @@ function PleinForm({ showModal, closeModalPlein }) {
   })
 
   const handleClose = () => {
-    closeModalPlein(datas)
+    closeModalPlein(null)
   }
 
   const handleSubmit = e => {
