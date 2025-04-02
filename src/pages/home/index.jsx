@@ -65,7 +65,13 @@ function Home() {
     console.log(vehiculeUpdated)
     localStorage.setItem('vehicule', JSON.stringify(vehiculeUpdated))
   }
-
+  const handleDeletePlein = index => {
+    const pleins = vehicule.pleins || []
+    const newDatas = pleins.filter((_, i) => i !== index)
+    const newVehicule = { ...vehicule, pleins: newDatas }
+    setVehicule(newVehicule)
+    localStorage.setItem('vehicule', JSON.stringify(newVehicule))
+  }
   return (
     <Container className="w-100">
       {!Object.keys(vehicule).length ? (
@@ -90,7 +96,7 @@ function Home() {
             </Button>
           </div>
           {modalPlein && <PleinForm showModal={modalPlein} closeModalPlein={closeModalPlein} />}
-          <HistoPleins pleins={vehicule.pleins} />
+          <HistoPleins pleins={vehicule.pleins} suppressionPlein={handleDeletePlein} />
           <GraphKilometrageEvolution pleins={vehicule.pleins} />
           <GraphPrixLitre pleins={vehicule.pleins} />
         </div>
