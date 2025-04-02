@@ -1,5 +1,6 @@
 {
   "name": "parc_vehicules",
+  "homepage": "https://alangrolleau.github.io/car_Manager",
   "private": true,
   "version": "0.0.0",
   "type": "module",
