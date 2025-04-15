@@ -6,6 +6,9 @@ import PleinForm from '../../components/pleinForm'
 import HistoPleins from '../../components/histoPleins'
 import GraphKilometrageEvolution from '../../components/graphKilometrage'
 import GraphPrixLitre from '../../components/graphPrixLitre'
+import TotalKmsParcourus from '../../components/totalKmsParcourus'
+import CoutTotalCarburant from '../../components/coutTotalCarburant'
+import MoyenneConsommation from '../../components/moyenneConsommation'
 
 function Home() {
   const [vehicule, setVehicule] = useState({})
@@ -77,7 +80,7 @@ function Home() {
       {!Object.keys(vehicule).length ? (
         <>
           <Alert variant="warning">Aucun véhicule identifié</Alert>
-          <Button variant="outline-warning" onClick={showModalVehicule}>
+          <Button variant="outline-dark m-2" onClick={showModalVehicule}>
             Déclarer un véhicule
           </Button>
           {modalVehicule && (
@@ -97,6 +100,10 @@ function Home() {
           </div>
           {modalPlein && <PleinForm showModal={modalPlein} closeModalPlein={closeModalPlein} />}
           <HistoPleins pleins={vehicule.pleins} suppressionPlein={handleDeletePlein} />
+          <TotalKmsParcourus vehicule={vehicule} />
+          <CoutTotalCarburant vehicule={vehicule} />
+          <MoyenneConsommation vehicule={vehicule} />
+
           <GraphKilometrageEvolution pleins={vehicule.pleins} />
           <GraphPrixLitre pleins={vehicule.pleins} />
         </div>
