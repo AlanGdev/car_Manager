@@ -1,7 +1,7 @@
 function MoyenneConsommation({ vehicule }) {
   const pleins = vehicule.pleins
-  const premierPlein = pleins[pleins.length - 1]
-  const dernierPlein = pleins[0]
+  const premierPlein = pleins[0]
+  const dernierPlein = pleins[pleins.length - 1]
   const kmsParcourus = dernierPlein.kilometrage - premierPlein.kilometrage
   const consommation =
     pleins.reduce((totalConsomme, plein) => {

@@ -4,11 +4,10 @@ import VehiculeForm from '../../components/vehiculeForm'
 import Vehicule from '../../components/vehicule'
 import PleinForm from '../../components/pleinForm'
 import HistoPleins from '../../components/histoPleins'
-import GraphKilometrageEvolution from '../../components/graphKilometrage'
 import GraphPrixLitre from '../../components/graphPrixLitre'
-import TotalKmsParcourus from '../../components/totalKmsParcourus'
-import CoutTotalCarburant from '../../components/coutTotalCarburant'
-import MoyenneConsommation from '../../components/moyenneConsommation'
+import Consommation from '../../components/Consommation'
+import CoutJournalier from '../../components/coutJournalier'
+import KmsJournalier from '../../components/kmsJournalier'
 
 function Home() {
   const [vehicule, setVehicule] = useState({})
@@ -59,9 +58,7 @@ function Home() {
       console.log(newDatas)
     }
     newDatas.sort((a, b) => {
-      if (a.date < b.date) return 1
-      if (a.date > b.date) return -1
-      return b.kilometrage - a.kilometrage
+      return a.date !== b.date ? new Date(a.date) - new Date(b.date) : a.kilometrage - b.kilometrage
     })
     const vehiculeUpdated = { ...vehicule, ['pleins']: newDatas }
     setVehicule(vehiculeUpdated)
@@ -99,12 +96,12 @@ function Home() {
             </Button>
           </div>
           {modalPlein && <PleinForm showModal={modalPlein} closeModalPlein={closeModalPlein} />}
-          <HistoPleins pleins={vehicule.pleins} suppressionPlein={handleDeletePlein} />
-          <TotalKmsParcourus vehicule={vehicule} />
-          <CoutTotalCarburant vehicule={vehicule} />
-          <MoyenneConsommation vehicule={vehicule} />
 
-          <GraphKilometrageEvolution pleins={vehicule.pleins} />
+          <HistoPleins pleins={vehicule.pleins} suppressionPlein={handleDeletePlein} />
+
+          <Consommation vehicule={vehicule} />
+          <KmsJournalier vehicule={vehicule} />
+          <CoutJournalier vehicule={vehicule} />
           <GraphPrixLitre pleins={vehicule.pleins} />
         </div>
       )}

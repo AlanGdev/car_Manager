@@ -3,12 +3,15 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { Link } from 'react-router-dom'
+import brandImg from '../../assets/VroomTrack.png'
 function Header() {
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary m-1">
         <Container fluid className="px-0">
-          <Navbar.Brand href="#home">Suivi véhicule</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <img src={brandImg} alt="Logo VroomTrack" height="120" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

@@ -14,6 +14,7 @@ function GraphPrixLitre({ pleins }) {
   return (
     <>
       <Card className="m-2 p-2 bg-light">
+        <Card.Title>Prix au litre lors du plein</Card.Title>
         <ResponsiveContainer width="100%" height={300}>
           <LineChart data={datas}>
             <CartesianGrid strokeDasharray="3 3" />

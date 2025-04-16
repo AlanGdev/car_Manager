@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { Card, Button } from 'react-bootstrap'
 function HistoPleins({ pleins, suppressionPlein }) {
+  const pleinsTries = pleins.sort((a, b) => {
+    return a.date !== b.date ? new Date(a.date) - new Date(b.date) : a.kilometrage - b.kilometrage
+  })
   const [show, setShow] = useState(false)
   console.log(pleins)
   const formatedDate = dateToFormate => {
@@ -11,11 +14,11 @@ function HistoPleins({ pleins, suppressionPlein }) {
 
   return (
     <>
-      <Button variant="outline-primary" onClick={() => setShow(!show)}>
+      <Button variant="outline-primary" onClick={() => setShow(!show)} className="my-2">
         Historique des pleins
       </Button>
       {show &&
-        pleins.map((plein, index) => (
+        pleinsTries.map((plein, index) => (
           <div key={index} className="d-flex w-100">
             <Card className="m-4 flex-grow-1">
               <Card.Body>
