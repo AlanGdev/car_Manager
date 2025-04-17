@@ -26,8 +26,8 @@ function KmsJournalier({ vehicule }) {
   return (
     <Container>
       {showGraph ? '' : ''}
-      <Card className="m-2 p-2 bg-light">
-        <Card.Title className="d-flex justify-content-between align-items-center">
+      <Card className="m-2 p-0 bg-light">
+        <Card.Title className=" d-flex flex-column flex-grow-1">
           <div>
             kilométrage journalier:{' '}
             <span
@@ -45,9 +45,11 @@ function KmsJournalier({ vehicule }) {
             </span>
             Kms/jour
           </div>
-          <Button variant="outline-primary" onClick={() => setShowGraph(!showGraph)}>
-            {showGraph ? 'Masquer Graph' : 'Afficher Graph'}
-          </Button>
+          <div>
+            <Button variant="outline-primary" onClick={() => setShowGraph(!showGraph)}>
+              {showGraph ? 'Masquer Graph' : 'Afficher Graph'}
+            </Button>
+          </div>
         </Card.Title>
 
         {kmsJournalier.length > 1 &&
@@ -65,7 +67,7 @@ function KmsJournalier({ vehicule }) {
               <XAxis dataKey="date" />
               <YAxis domain={['auto', 'auto']} unit="kms" />
               <Legend />
-              <Line dataKey="kilometrage" stroke="#82ca9d" name="kilométrage journalier" />
+              <Line dataKey="kilometrage" stroke="#4A8C89" name="kilométrage journalier" />
             </LineChart>
           </ResponsiveContainer>
         ) : (

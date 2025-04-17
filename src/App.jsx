@@ -9,12 +9,14 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/vehicule" element={<VehiculePage />} />
-        </Routes>
-        <Footer />
+        <div className="d-flex flex-column min-vh-100">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/vehicule" element={<VehiculePage />} />
+          </Routes>
+          <Footer />
+        </div>
       </Router>
     </>
   )

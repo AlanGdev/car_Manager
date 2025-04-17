@@ -4,10 +4,10 @@ import VehiculeForm from '../../components/vehiculeForm'
 import Vehicule from '../../components/vehicule'
 import PleinForm from '../../components/pleinForm'
 import HistoPleins from '../../components/histoPleins'
-import GraphPrixLitre from '../../components/graphPrixLitre'
 import Consommation from '../../components/Consommation'
 import CoutJournalier from '../../components/coutJournalier'
 import KmsJournalier from '../../components/kmsJournalier'
+import PrixAuLitre from '../../components/prixAuLitre'
 
 function Home() {
   const [vehicule, setVehicule] = useState({})
@@ -73,7 +73,7 @@ function Home() {
     localStorage.setItem('vehicule', JSON.stringify(newVehicule))
   }
   return (
-    <Container className="w-100">
+    <Container className="w-100 flex-grow-1">
       {!Object.keys(vehicule).length ? (
         <>
           <Alert variant="warning">Aucun véhicule identifié</Alert>
@@ -102,7 +102,7 @@ function Home() {
           <Consommation vehicule={vehicule} />
           <KmsJournalier vehicule={vehicule} />
           <CoutJournalier vehicule={vehicule} />
-          <GraphPrixLitre pleins={vehicule.pleins} />
+          <PrixAuLitre vehicule={vehicule} />
         </div>
       )}
     </Container>

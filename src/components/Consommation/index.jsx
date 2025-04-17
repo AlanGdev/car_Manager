@@ -49,37 +49,47 @@ function Consommation({ vehicule }) {
 
   return (
     <Container>
-      <Card className="m-2 p-2 bg-light">
-        <Card.Title className="d-flex gap-2 justify-content-between align-items-center">
-          <div>
-            Conso Moyenne:{' '}
-            <span
-              className={
-                consoMoyenne.length > 2 &&
-                consoMoyenne[consoMoyenne.length - 1].moyenne <=
-                  consoMoyenne[consoMoyenne.length - 2].moyenne
-                  ? 'bg-success text-light px-2 rounded'
-                  : 'bg-danger text-light px-2 rounded'
-              }
-            >
-              {consoMoyenne.length > 0
-                ? consoMoyenne[consoMoyenne.length - 1].moyenne.toFixed(2)
-                : '...'}
-            </span>
-            L/100kms
-          </div>
-          <Button variant="outline-primary" onClick={() => setShowGraph(!showGraph)}>
-            {showGraph ? 'Masquer Graph' : 'Afficher Graph'}
-          </Button>
-        </Card.Title>
+      <Card className="m-2 p-0 bg-light">
+        <Card.Title className="d-flex align-items-stretch m-0">
+          <div className=" d-flex flex-column flex-grow-1">
+            <p>
+              Conso Moyenne:{' '}
+              <span
+                className={
+                  consoMoyenne.length > 2 &&
+                  consoMoyenne[consoMoyenne.length - 1].moyenne <=
+                    consoMoyenne[consoMoyenne.length - 2].moyenne
+                    ? 'bg-success text-light px-2 rounded'
+                    : 'bg-danger text-light px-2 rounded'
+                }
+              >
+                {consoMoyenne.length > 0
+                  ? consoMoyenne[consoMoyenne.length - 1].moyenne.toFixed(2)
+                  : '...'}
+              </span>
+              L/100kms
+            </p>
 
-        {consoMoyenne.length > 1 &&
-        consoMoyenne[consoMoyenne.length - 1].moyenne <
-          consoMoyenne[consoMoyenne.length - 2].moyenne ? (
-          <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
-        ) : (
-          <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
-        )}
+            <div>
+              {consoMoyenne.length > 1 &&
+              consoMoyenne[consoMoyenne.length - 1].moyenne <
+                consoMoyenne[consoMoyenne.length - 2].moyenne ? (
+                <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
+              ) : (
+                <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
+              )}
+            </div>
+          </div>
+          <div className="d-flex align-items-stretch ms-2">
+            <Button
+              className="h-100 "
+              variant="outline-primary"
+              onClick={() => setShowGraph(!showGraph)}
+            >
+              {showGraph ? 'Masquer Graph' : 'Afficher Graph'}
+            </Button>
+          </div>
+        </Card.Title>
 
         {showGraph && (
           <ResponsiveContainer width="100%" height={300}>
@@ -88,8 +98,8 @@ function Consommation({ vehicule }) {
               <XAxis dataKey="date" />
               <YAxis domain={['auto', 'auto']} unit="" />
               <Legend />
-              <Line dataKey="moyennePlein" stroke="#8884d8" name="Conso plein" />
-              <Line dataKey="moyenneCumulee" stroke="#82ca9d" name="Conso moyenne" />
+              <Line dataKey="moyennePlein" stroke="#2F5F63" name="Conso plein" />
+              <Line dataKey="moyenneCumulee" stroke="#A5C8CA" name="Conso moyenne" />
             </LineChart>
           </ResponsiveContainer>
         )}

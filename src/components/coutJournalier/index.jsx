@@ -39,7 +39,7 @@ function CoutJournalier({ vehicule }) {
                 coutJournalier[coutJournalier.length - 1].cout <=
                   coutJournalier[coutJournalier.length - 2].cout
                   ? 'bg-success text-light px-2 rounded'
-                  : 'bg-danger text-light'
+                  : 'bg-danger text-light px-2 rounded'
               }
             >
               {coutJournalier.length >= 1
@@ -68,7 +68,7 @@ function CoutJournalier({ vehicule }) {
               <XAxis dataKey="date" />
               <YAxis domain={['auto', 'auto']} unit="€" />
               <Legend />
-              <Line dataKey="cout" stroke="#82ca9d" name="Cout journalier" />
+              <Line dataKey="cout" stroke="#D96F4E" name="Coût journalier" />
             </LineChart>
           </ResponsiveContainer>
         ) : (

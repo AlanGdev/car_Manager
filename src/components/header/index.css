@@ -1,0 +1,7 @@
+.navbar-vroom {
+  background-image: url('../../assets/header-banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+}

@@ -3,13 +3,16 @@
 
 // 🌈 Personnalise ici les variables Bootstrap si tu veux
 // Exemple :
-$primary: #3b82f6;
-$success: #22c55e;
-$warning: #facc15;
-$danger: #f43f5e;
-$info: #38bdf8;
-$body-bg: #f0f9ff;
-$body-color: #0f172a;
+$primary: #d96f4e; // accent terre cuite
+$success: #4caf50; // vert doux naturel
+$warning: #f28500; // orange doux
+$danger: #c9302c; // rouge vif plus contrasté
+$info: #a5c8ca; // bleuté doux en lien avec la bannière
+
+$body-bg: #faf3ed; // fond chaud clair
+$body-color: #2b2b2b; // texte lisible foncé
+$light: #fefcf9; // fond très clair pour bg-light
+$dark: #1c1c1c; // fond très foncé pour bg-dark
 
 // Puis importe les autres parties de Bootstrap& variables Bootstrap
 @import 'bootstrap/scss/variables';
