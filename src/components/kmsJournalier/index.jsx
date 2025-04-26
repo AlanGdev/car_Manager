@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import { Button, Container, Card } from 'react-bootstrap'
+import { Button, Container, Card, Row, Col } from 'react-bootstrap'
 import { ResponsiveContainer, LineChart, CartesianGrid, XAxis, YAxis, Line, Legend } from 'recharts'
+import imgKmsJournalier from '../../assets/kmsJournalier.png'
 
 function KmsJournalier({ vehicule }) {
   const [showGraph, setShowGraph] = useState(false)
@@ -24,41 +25,55 @@ function KmsJournalier({ vehicule }) {
     setKmsJournalier(tableau)
   }, [])
   return (
-    <Container>
-      {showGraph ? '' : ''}
-      <Card className="m-2 p-0 bg-light">
-        <Card.Title className=" d-flex flex-column flex-grow-1">
-          <div>
-            kilométrage journalier:{' '}
-            <span
-              className={
-                kmsJournalier.length > 1 &&
+    <div className="">
+      <Card className="bg-light">
+        <Row>
+          <Col xs={3} className="d-flex align-items-center">
+            <Card.Img
+              className=" object-fit-contain"
+              style={{ width: '100px' }}
+              variant="start"
+              src={imgKmsJournalier}
+            />
+          </Col>
+          <Col>
+            <Card.Title className="flex-grow-1 p-2">
+              <div className="">
+                <p>
+                  kilométrage journalier:{' '}
+                  <span
+                    className={
+                      kmsJournalier.length > 1 &&
+                      kmsJournalier[kmsJournalier.length - 1].kilometrage <
+                        kmsJournalier[kmsJournalier.length - 2].kilometrage
+                        ? 'bg-success text-light px-2 rounded'
+                        : 'bg-danger text-light px-2 rounded'
+                    }
+                  >
+                    {kmsJournalier.length > 0
+                      ? kmsJournalier[kmsJournalier.length - 1].kilometrage.toFixed(2)
+                      : '...'}
+                  </span>
+                  Kms/jour
+                </p>
+              </div>
+              <div>
+                {kmsJournalier.length > 1 &&
                 kmsJournalier[kmsJournalier.length - 1].kilometrage <
-                  kmsJournalier[kmsJournalier.length - 2].kilometrage
-                  ? 'bg-success text-light px-2 rounded'
-                  : 'bg-danger text-light px-2 rounded'
-              }
-            >
-              {kmsJournalier.length > 0
-                ? kmsJournalier[kmsJournalier.length - 1].kilometrage.toFixed(2)
-                : '...'}
-            </span>
-            Kms/jour
-          </div>
-          <div>
-            <Button variant="outline-primary" onClick={() => setShowGraph(!showGraph)}>
-              {showGraph ? 'Masquer Graph' : 'Afficher Graph'}
-            </Button>
-          </div>
-        </Card.Title>
-
-        {kmsJournalier.length > 1 &&
-        kmsJournalier[kmsJournalier.length - 1].kilometrage <
-          kmsJournalier[kmsJournalier.length - 2].kilometrage ? (
-          <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
-        ) : (
-          <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
-        )}
+                  kmsJournalier[kmsJournalier.length - 2].kilometrage ? (
+                  <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
+                ) : (
+                  <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
+                )}
+              </div>
+              <div className="text-end mx-2">
+                <Button variant="outline-primary" onClick={() => setShowGraph(!showGraph)}>
+                  {showGraph ? 'Masquer Graph' : 'Afficher Graph'}
+                </Button>
+              </div>
+            </Card.Title>
+          </Col>
+        </Row>
 
         {showGraph ? (
           <ResponsiveContainer width="100%" height={300}>
@@ -74,7 +89,7 @@ function KmsJournalier({ vehicule }) {
           ''
         )}
       </Card>
-    </Container>
+    </div>
   )
 }
 export default KmsJournalier

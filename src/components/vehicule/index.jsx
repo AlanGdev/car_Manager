@@ -1,11 +1,15 @@
-import { Card } from 'react-bootstrap'
+import { Card, Alert } from 'react-bootstrap'
 function Vehicule({ vehicule }) {
+  if (!vehicule || !vehicule.params) {
+    return <Alert variant="warning">Pas de véhicule enregistré</Alert>
+  }
+
   return (
     <Card className="p-2 flex-grow-1">
       <Card.Title>
-        {vehicule.marque} {vehicule.modele}
+        {vehicule.params.marque} {vehicule.params.modele}
       </Card.Title>
-      <Card.Body>Immatriculation: {vehicule.immatriculation}</Card.Body>
+      <Card.Body>Immatriculation: {vehicule.params.immatriculation}</Card.Body>
     </Card>
   )
 }

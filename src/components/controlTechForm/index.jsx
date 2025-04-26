@@ -1,26 +1,25 @@
 import { useState } from 'react'
 import { Modal, Form, Button } from 'react-bootstrap'
 
-function PleinForm({ vehicule, maj }) {
+function ControlTechForm({ vehicule, maj }) {
   const [showModal, setShowModal] = useState(false)
 
   const [datas, setDatas] = useState({
     date: '',
     kilometrage: '',
-    volume: '',
     prix: '',
   })
-  const pleins = vehicule.pleins || []
+  const controlTechs = vehicule?.controlTechs || []
 
   const handleSubmit = e => {
     e.preventDefault()
-    const newDatas = [...pleins, datas]
+    const newDatas = [...controlTechs, datas]
     newDatas.sort((a, b) => {
       if (a.date != b.date) return new Date(a.date) - new Date(b.date)
       return a.kilometrage - b.kilometrage
     })
 
-    maj('pleins', newDatas)
+    maj('controlTechs', newDatas)
     setShowModal(false)
   }
 
@@ -32,11 +31,11 @@ function PleinForm({ vehicule, maj }) {
   return (
     <>
       <Button type="button" className="h-100 w-100" onClick={() => setShowModal(true)}>
-        Ajouter plein de carburant
+        Ajouter un contrôle technique effectué
       </Button>
       <Modal show={showModal} onHide={() => setShowModal(false)}>
         <Modal.Header closeButton>
-          <Modal.Title>Nouveau Plein</Modal.Title>
+          <Modal.Title>Nouveau contrôle technique</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
@@ -51,22 +50,11 @@ function PleinForm({ vehicule, maj }) {
             </Form.Group>
             <Form.Group className="mb-2">
               <Form.Control
-                placeholder="Kilométrage lors du plein"
+                placeholder="Kilométrage au contrôle"
                 type="number"
                 step="1"
                 name="kilometrage"
                 value={datas.kilometrage}
-                onChange={handleChange}
-                required
-              />
-            </Form.Group>
-            <Form.Group className="mb-2">
-              <Form.Control
-                placeholder="Volume en litres"
-                type="number"
-                step="0.01"
-                name="volume"
-                value={datas.volume}
                 onChange={handleChange}
                 required
               />
@@ -82,6 +70,17 @@ function PleinForm({ vehicule, maj }) {
                 required
               />
             </Form.Group>
+            <Form.Group className="mb-2">
+              <Form.Label>Date prochain contrôle</Form.Label>
+              <Form.Control
+                type="date"
+                value={datas.dateProx}
+                name="date"
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
+
             <Button type="submit">Valider</Button>
           </Form>
         </Modal.Body>
@@ -90,4 +89,4 @@ function PleinForm({ vehicule, maj }) {
   )
 }
 
-export default PleinForm
+export default ControlTechForm

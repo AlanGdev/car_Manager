@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
-import { Container, Card, Button } from 'react-bootstrap'
+import { Container, Card, Button, Row, Col } from 'react-bootstrap'
 import { ResponsiveContainer, LineChart, CartesianGrid, XAxis, YAxis, Line, Legend } from 'recharts'
+import imgConsommation from '../../assets/consoMoyenne.png'
 
 function Consommation({ vehicule }) {
   const [consoPlein, setConsoPlein] = useState([])
   const [consoMoyenne, setConsoMoyenne] = useState([])
   const [graphData, setGraphData] = useState([])
   const [showGraph, setShowGraph] = useState(false)
-  const pleins = vehicule.pleins
+  const pleins = vehicule.pleins || []
 
   useEffect(() => {
     const tableau = []
@@ -21,7 +22,7 @@ function Consommation({ vehicule }) {
     })
     setConsoPlein(tableau)
     console.log(tableau)
-  }, [])
+  }, [pleins])
 
   useEffect(() => {
     const tableau = []
@@ -36,7 +37,7 @@ function Consommation({ vehicule }) {
       }
     })
     setConsoMoyenne(tableau)
-  }, [])
+  }, [pleins])
 
   useEffect(() => {
     const fusion = consoPlein.map((plein, i) => ({
@@ -48,48 +49,60 @@ function Consommation({ vehicule }) {
   }, [consoPlein, consoMoyenne])
 
   return (
-    <Container>
-      <Card className="m-2 p-0 bg-light">
-        <Card.Title className="d-flex align-items-stretch m-0">
-          <div className=" d-flex flex-column flex-grow-1">
-            <p>
-              Conso Moyenne:{' '}
-              <span
-                className={
-                  consoMoyenne.length > 2 &&
-                  consoMoyenne[consoMoyenne.length - 1].moyenne <=
-                    consoMoyenne[consoMoyenne.length - 2].moyenne
-                    ? 'bg-success text-light px-2 rounded'
-                    : 'bg-danger text-light px-2 rounded'
-                }
-              >
-                {consoMoyenne.length > 0
-                  ? consoMoyenne[consoMoyenne.length - 1].moyenne.toFixed(2)
-                  : '...'}
-              </span>
-              L/100kms
-            </p>
+    <div className="">
+      <Card className="bg-light">
+        <Row>
+          <Col xs={3} className="d-flex align-items-center">
+            <Card.Img
+              className=" object-fit-contain"
+              style={{ width: '100px' }}
+              variant="start"
+              src={imgConsommation}
+            />
+          </Col>
+          <Col xs={9}>
+            <Card.Title className="flex-grow-1 p-2">
+              <div className="">
+                <p>
+                  Conso Moyenne:{' '}
+                  <span
+                    className={
+                      consoMoyenne.length > 2 &&
+                      consoMoyenne[consoMoyenne.length - 1].moyenne <=
+                        consoMoyenne[consoMoyenne.length - 2].moyenne
+                        ? 'bg-success text-light px-2 rounded'
+                        : 'bg-danger text-light px-2 rounded'
+                    }
+                  >
+                    {consoMoyenne.length > 0
+                      ? consoMoyenne[consoMoyenne.length - 1].moyenne.toFixed(2)
+                      : '...'}
+                  </span>
+                  L/100kms
+                </p>
 
-            <div>
-              {consoMoyenne.length > 1 &&
-              consoMoyenne[consoMoyenne.length - 1].moyenne <
-                consoMoyenne[consoMoyenne.length - 2].moyenne ? (
-                <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
-              ) : (
-                <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
-              )}
-            </div>
-          </div>
-          <div className="d-flex align-items-stretch ms-2">
-            <Button
-              className="h-100 "
-              variant="outline-primary"
-              onClick={() => setShowGraph(!showGraph)}
-            >
-              {showGraph ? 'Masquer Graph' : 'Afficher Graph'}
-            </Button>
-          </div>
-        </Card.Title>
+                <div>
+                  {consoMoyenne.length > 1 &&
+                  consoMoyenne[consoMoyenne.length - 1].moyenne <
+                    consoMoyenne[consoMoyenne.length - 2].moyenne ? (
+                    <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
+                  ) : (
+                    <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
+                  )}
+                </div>
+              </div>
+              <div className="text-end mx-2">
+                <Button
+                  className=""
+                  variant="outline-primary"
+                  onClick={() => setShowGraph(!showGraph)}
+                >
+                  {showGraph ? 'Masquer Graph' : 'Afficher Graph'}
+                </Button>
+              </div>
+            </Card.Title>
+          </Col>
+        </Row>
 
         {showGraph && (
           <ResponsiveContainer width="100%" height={300}>
@@ -104,7 +117,7 @@ function Consommation({ vehicule }) {
           </ResponsiveContainer>
         )}
       </Card>
-    </Container>
+    </div>
   )
 }
 

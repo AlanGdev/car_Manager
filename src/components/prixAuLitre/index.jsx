@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import { Button, Container, Card } from 'react-bootstrap'
+import { Button, Container, Card, Row, Col } from 'react-bootstrap'
 import { ResponsiveContainer, LineChart, CartesianGrid, XAxis, YAxis, Line, Legend } from 'recharts'
+import imgPrixAuLitre from '../../assets/prixAuLitre.png'
 
 function PrixAuLitre({ vehicule }) {
   const [showGraph, setShowGraph] = useState(false)
@@ -34,52 +35,61 @@ function PrixAuLitre({ vehicule }) {
   }
 
   return (
-    <Container>
+    <div className="">
       {showGraph ? '' : ''}
-      <Card className="m-2 p-0 bg-light">
-        <Card.Title className="d-flex align-items-stretch m-0">
-          <div className=" d-flex flex-column flex-grow-1">
-            <p>
-              Prix au litre:{' '}
-              <span
-                className={
-                  prixAuLitre.length > 1 &&
-                  prixAuLitre[prixAuLitre.length - 1].prix <
-                    prixAuLitre[prixAuLitre.length - 2].prix
-                    ? 'bg-success text-light rounded px-2'
-                    : 'bg-danger text-light rounded px-2'
-                }
-              >
-                {prixAuLitre.length > 1 && prixAuLitre[prixAuLitre.length - 1].prix.toFixed(2)}
-              </span>
-              €/litre
-            </p>
-            <p>
-              Prix Moyen depuis le{' '}
-              {prixAuLitre.length > 0 ? dateFormat(prixAuLitre[0].date) : '...'}:
-              {prixAuLitre.length > 0 ? prixAuLitre[prixAuLitre.length - 1].prixMoyen : '...'}
-              €/litre
-            </p>
-            <div>
-              {prixAuLitre.length > 1 &&
-              prixAuLitre[prixAuLitre.length - 1].prixMoyen <
-                prixAuLitre[prixAuLitre.length - 2].prixMoyen ? (
-                <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
-              ) : prixAuLitre.length > 1 ? (
-                <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
-              ) : null}
-            </div>
-          </div>
-          <div className="d-flex align-items-stretch ms-2">
-            <Button
-              className="h-100 "
-              variant="outline-primary"
-              onClick={() => setShowGraph(!showGraph)}
-            >
-              {showGraph ? 'Masquer Graph' : 'Afficher Graph'}
-            </Button>
-          </div>
-        </Card.Title>
+      <Card className="bg-light ">
+        <Row>
+          <Col xs={3} className="d-flex align-items-center">
+            {' '}
+            <Card.Img
+              className=" object-fit-contain"
+              style={{ width: '100px' }}
+              variant="start"
+              src={imgPrixAuLitre}
+            />
+          </Col>
+          <Col>
+            <Card.Title className="flex-grow-1 p-2">
+              <div className="">
+                <p>
+                  Prix au litre:{' '}
+                  <span
+                    className={
+                      prixAuLitre.length > 1 &&
+                      prixAuLitre[prixAuLitre.length - 1].prix <
+                        prixAuLitre[prixAuLitre.length - 2].prix
+                        ? 'bg-success text-light rounded px-2'
+                        : 'bg-danger text-light rounded px-2'
+                    }
+                  >
+                    {prixAuLitre.length > 1 && prixAuLitre[prixAuLitre.length - 1].prix.toFixed(2)}
+                  </span>
+                  €/litre
+                </p>
+                <p>
+                  Prix Moyen depuis le{' '}
+                  {prixAuLitre.length > 0 ? dateFormat(prixAuLitre[0].date) : '...'}:
+                  {prixAuLitre.length > 0 ? prixAuLitre[prixAuLitre.length - 1].prixMoyen : '...'}
+                  €/litre
+                </p>
+                <div>
+                  {prixAuLitre.length > 1 &&
+                  prixAuLitre[prixAuLitre.length - 1].prixMoyen <
+                    prixAuLitre[prixAuLitre.length - 2].prixMoyen ? (
+                    <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
+                  ) : prixAuLitre.length > 1 ? (
+                    <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
+                  ) : null}
+                </div>
+              </div>
+              <div className="text-end mx-2">
+                <Button variant="outline-primary" onClick={() => setShowGraph(!showGraph)}>
+                  {showGraph ? 'Masquer Graph' : 'Afficher Graph'}
+                </Button>
+              </div>
+            </Card.Title>
+          </Col>
+        </Row>
 
         {showGraph ? (
           <ResponsiveContainer width="100%" height={300}>
@@ -100,7 +110,7 @@ function PrixAuLitre({ vehicule }) {
           ''
         )}
       </Card>
-    </Container>
+    </div>
   )
 }
 export default PrixAuLitre
