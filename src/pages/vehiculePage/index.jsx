@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Vehicule from '../../components/vehicule'
 import VidangeForm from '../../components/vidangeForm'
 import ControlTechForm from '../../components/controlTechForm'
+import NiveauHuileForm from '../../components/niveauHuileForm'
 function VehiculePage() {
   const [vehicule, setVehicule] = useState(null)
 
@@ -21,6 +22,7 @@ function VehiculePage() {
   return (
     <Container className="flex-grow-1">
       <Vehicule vehicule={vehicule} />
+      <NiveauHuileForm vehicule={vehicule} maj={maj} />
       <VidangeForm vehicule={vehicule} maj={maj} />
       <ControlTechForm vehicule={vehicule} maj={maj} />
     </Container>

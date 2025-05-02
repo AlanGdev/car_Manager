@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Modal, Form, Button } from 'react-bootstrap'
 
-function VidangeForm({ vehicule, maj }) {
+function NiveauHuileForm({ vehicule, maj }) {
   const [showModal, setShowModal] = useState(false)
 
   const [datas, setDatas] = useState({
@@ -36,11 +36,11 @@ function VidangeForm({ vehicule, maj }) {
         className="h-100 w-100 mb-2"
         onClick={() => setShowModal(true)}
       >
-        Ajouter une vidange effectuée
+        Vérification du niveau d'huile
       </Button>
       <Modal show={showModal} onHide={() => setShowModal(false)}>
         <Modal.Header closeButton>
-          <Modal.Title>Nouvelle vidange</Modal.Title>
+          <Modal.Title>Vérification du niveau d'huile</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
@@ -55,22 +55,11 @@ function VidangeForm({ vehicule, maj }) {
             </Form.Group>
             <Form.Group className="mb-2">
               <Form.Control
-                placeholder="Kilométrage à la vidange"
+                placeholder="Kilométrage lors de la vérif."
                 type="number"
                 step="1"
                 name="kilometrage"
                 value={datas.kilometrage}
-                onChange={handleChange}
-                required
-              />
-            </Form.Group>
-            <Form.Group className="mb-2">
-              <Form.Control
-                placeholder="Prix"
-                type="number"
-                step="0.01"
-                name="prix"
-                value={datas.prix}
                 onChange={handleChange}
                 required
               />
@@ -83,4 +72,4 @@ function VidangeForm({ vehicule, maj }) {
   )
 }
 
-export default VidangeForm
+export default NiveauHuileForm

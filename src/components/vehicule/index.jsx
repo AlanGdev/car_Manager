@@ -5,7 +5,7 @@ function Vehicule({ vehicule }) {
   }
 
   return (
-    <Card className="p-2 flex-grow-1">
+    <Card className="p-2">
       <Card.Title>
         {vehicule.params.marque} {vehicule.params.modele}
       </Card.Title>

@@ -25,7 +25,7 @@ function Home() {
 
   return (
     <Container className="flex-grow-1">
-      <p>{JSON.stringify(vehicule)}</p>
+      {/*<p>{JSON.stringify(vehicule)}</p>*/}
       {vehicule?.params ? (
         <>
           <Row className="g-2 mb-2">

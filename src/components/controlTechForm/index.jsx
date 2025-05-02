@@ -30,7 +30,12 @@ function ControlTechForm({ vehicule, maj }) {
 
   return (
     <>
-      <Button type="button" className="h-100 w-100" onClick={() => setShowModal(true)}>
+      <Button
+        type="button"
+        variant="outline-primary"
+        className="h-100 w-100 mb-2"
+        onClick={() => setShowModal(true)}
+      >
         Ajouter un contrôle technique effectué
       </Button>
       <Modal show={showModal} onHide={() => setShowModal(false)}>
