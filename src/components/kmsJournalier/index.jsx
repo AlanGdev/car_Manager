@@ -82,7 +82,12 @@ function KmsJournalier({ vehicule }) {
               <XAxis dataKey="date" />
               <YAxis domain={['auto', 'auto']} unit="kms" />
               <Legend />
-              <Line dataKey="kilometrage" stroke="#4A8C89" name="kilométrage journalier" />
+              <Line
+                dataKey="kilometrage"
+                stroke="#4A8C89"
+                name="kilométrage journalier"
+                dot={false}
+              />
             </LineChart>
           </ResponsiveContainer>
         ) : (

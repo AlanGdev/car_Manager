@@ -31,7 +31,7 @@ function PrixAuLitre({ vehicule }) {
 
   const dateFormat = date => {
     const [aaaa, mm, dd] = date.split('-')
-    return `${dd}-${mm}-${aaaa}`
+    return `${dd}/${mm}/${aaaa}`
   }
 
   return (
@@ -98,11 +98,12 @@ function PrixAuLitre({ vehicule }) {
               <XAxis dataKey="date" />
               <YAxis domain={['auto', 'auto']} unit="€" />
               <Legend />
-              <Line dataKey="prix" stroke="#6D98A5" name={`Prix à date`} />
+              <Line dataKey="prix" stroke="#6D98A5" name={`Prix à date`} dot={false} />
               <Line
                 dataKey="prixMoyen"
                 stroke="#DCA183"
-                name={`Prix moyen depuis le ${prixAuLitre.length > 0 ? prixAuLitre[0].date : ''}`}
+                name={`Prix moyen depuis le ${prixAuLitre.length > 0 ? dateFormat(prixAuLitre[0].date) : ''}`}
+                dot={false}
               />
             </LineChart>
           </ResponsiveContainer>

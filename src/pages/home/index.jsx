@@ -7,13 +7,20 @@ import Consommation from '../../components/consommation'
 import CoutJournalier from '../../components/coutJournalier'
 import KmsJournalier from '../../components/kmsJournalier'
 import PrixAuLitre from '../../components/prixAuLitre'
+import fichier from '../../assets/vehicule_honda_civic_sport.json'
 
 function Home() {
   const [vehicule, setVehicule] = useState(null)
+  /*useEffect(() => {
+    localStorage.setItem('vehicule', JSON.stringify(fichier))
+  })*/
 
   useEffect(() => {
     const datas = JSON.parse(localStorage.getItem('vehicule'))
     console.log(JSON.stringify(datas))
+    datas
+      ? console.log('vehicule présent')
+      : localStorage.setItem('vehicule', JSON.stringify(fichier))
     setVehicule(datas)
   }, [])
 

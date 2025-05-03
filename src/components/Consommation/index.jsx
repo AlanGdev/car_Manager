@@ -111,8 +111,8 @@ function Consommation({ vehicule }) {
               <XAxis dataKey="date" />
               <YAxis domain={['auto', 'auto']} unit="" />
               <Legend />
-              <Line dataKey="moyennePlein" stroke="#2F5F63" name="Conso plein" />
-              <Line dataKey="moyenneCumulee" stroke="#A5C8CA" name="Conso moyenne" />
+              <Line dataKey="moyennePlein" stroke="#2F5F63" name="Conso plein" dot={false} />
+              <Line dataKey="moyenneCumulee" stroke="#FF0000" name="Conso moyenne" dot={false} />
             </LineChart>
           </ResponsiveContainer>
         )}

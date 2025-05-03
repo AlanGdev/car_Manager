@@ -1,0 +1,1966 @@
+{
+  "params": {
+    "marque": "Honda",
+    "modele": "Civic sport",
+    "immatriculation": "GG-678-HT",
+    "carburant": "essence"
+  },
+  "pleins": [
+    {
+      "date": "2017-02-08",
+      "kilometrage": 75940,
+      "volume": 43.15,
+      "prix": 66.32
+    },
+    {
+      "date": "2017-02-20",
+      "kilometrage": 76701,
+      "volume": 40.01,
+      "prix": 57.85
+    },
+    {
+      "date": "2017-03-02",
+      "kilometrage": 77225,
+      "volume": 39.79,
+      "prix": 57.1
+    },
+    {
+      "date": "2017-03-17",
+      "kilometrage": 78007,
+      "volume": 36.71,
+      "prix": 50.0
+    },
+    {
+      "date": "2017-04-01",
+      "kilometrage": 78970,
+      "volume": 38.87,
+      "prix": 55.0
+    },
+    {
+      "date": "2017-04-01",
+      "kilometrage": 78464,
+      "volume": 40.4,
+      "prix": 56.76
+    },
+    {
+      "date": "2017-04-22",
+      "kilometrage": 79423,
+      "volume": 37.36,
+      "prix": 53.5
+    },
+    {
+      "date": "2017-05-01",
+      "kilometrage": 79979,
+      "volume": 41.74,
+      "prix": 59.35
+    },
+    {
+      "date": "2017-05-20",
+      "kilometrage": 80421,
+      "volume": 35.55,
+      "prix": 49.66
+    },
+    {
+      "date": "2017-05-29",
+      "kilometrage": 80845,
+      "volume": 34.3,
+      "prix": 48.19
+    },
+    {
+      "date": "2017-06-02",
+      "kilometrage": 81458,
+      "volume": 41.92,
+      "prix": 58.98
+    },
+    {
+      "date": "2017-06-10",
+      "kilometrage": 81945,
+      "volume": 36.98,
+      "prix": 51.85
+    },
+    {
+      "date": "2017-06-14",
+      "kilometrage": 82314,
+      "volume": 26.19,
+      "prix": 36.72
+    },
+    {
+      "date": "2017-06-18",
+      "kilometrage": 82840,
+      "volume": 37.64,
+      "prix": 52.66
+    },
+    {
+      "date": "2017-06-27",
+      "kilometrage": 83370,
+      "volume": 42.37,
+      "prix": 58.0
+    },
+    {
+      "date": "2017-07-05",
+      "kilometrage": 83938,
+      "volume": 43.51,
+      "prix": 60.0
+    },
+    {
+      "date": "2017-07-11",
+      "kilometrage": 84342,
+      "volume": 29.22,
+      "prix": 40.0
+    },
+    {
+      "date": "2017-07-15",
+      "kilometrage": 84878,
+      "volume": 39.87,
+      "prix": 54.3
+    },
+    {
+      "date": "2017-07-20",
+      "kilometrage": 85247,
+      "volume": 27.67,
+      "prix": 37.58
+    },
+    {
+      "date": "2017-07-26",
+      "kilometrage": 85845,
+      "volume": 42.46,
+      "prix": 57.7
+    },
+    {
+      "date": "2017-08-03",
+      "kilometrage": 86188,
+      "volume": 25.13,
+      "prix": 34.4
+    },
+    {
+      "date": "2017-08-09",
+      "kilometrage": 86762,
+      "volume": 40.52,
+      "prix": 55.39
+    },
+    {
+      "date": "2017-08-14",
+      "kilometrage": 87083,
+      "volume": 27.08,
+      "prix": 37.02
+    },
+    {
+      "date": "2017-08-23",
+      "kilometrage": 87672,
+      "volume": 42.78,
+      "prix": 58.35
+    },
+    {
+      "date": "2017-08-31",
+      "kilometrage": 88083,
+      "volume": 31.12,
+      "prix": 42.6
+    },
+    {
+      "date": "2017-09-12",
+      "kilometrage": 88608,
+      "volume": 38.82,
+      "prix": 53.26
+    },
+    {
+      "date": "2017-09-19",
+      "kilometrage": 89151,
+      "volume": 40.16,
+      "prix": 53.89
+    },
+    {
+      "date": "2017-09-24",
+      "kilometrage": 89391,
+      "volume": 20.52,
+      "prix": 28.5
+    },
+    {
+      "date": "2017-10-05",
+      "kilometrage": 89903,
+      "volume": 40.25,
+      "prix": 55.63
+    },
+    {
+      "date": "2017-10-16",
+      "kilometrage": 90418,
+      "volume": 39.85,
+      "prix": 54.95
+    },
+    {
+      "date": "2017-10-21",
+      "kilometrage": 90731,
+      "volume": 24.44,
+      "prix": 33.7
+    },
+    {
+      "date": "2017-11-04",
+      "kilometrage": 91205,
+      "volume": 35.81,
+      "prix": 50.1
+    },
+    {
+      "date": "2017-11-13",
+      "kilometrage": 90608,
+      "volume": 33.1,
+      "prix": 47.8
+    },
+    {
+      "date": "2017-11-20",
+      "kilometrage": 92160,
+      "volume": 40.33,
+      "prix": 57.95
+    },
+    {
+      "date": "2017-12-03",
+      "kilometrage": 92632,
+      "volume": 37.78,
+      "prix": 54.1
+    },
+    {
+      "date": "2017-12-08",
+      "kilometrage": 92845,
+      "volume": 17.52,
+      "prix": 25.0
+    },
+    {
+      "date": "2017-12-18",
+      "kilometrage": 93380,
+      "volume": 42.49,
+      "prix": 60.72
+    },
+    {
+      "date": "2017-12-24",
+      "kilometrage": 93790,
+      "volume": 32.09,
+      "prix": 45.95
+    },
+    {
+      "date": "2018-01-05",
+      "kilometrage": 94340,
+      "volume": 42.03,
+      "prix": 63.0
+    },
+    {
+      "date": "2018-01-19",
+      "kilometrage": 94832,
+      "volume": 39.64,
+      "prix": 59.5
+    },
+    {
+      "date": "2018-01-29",
+      "kilometrage": 95408,
+      "volume": 43.36,
+      "prix": 65.0
+    },
+    {
+      "date": "2018-02-05",
+      "kilometrage": 95956,
+      "volume": 40.36,
+      "prix": 60.5
+    },
+    {
+      "date": "2018-02-12",
+      "kilometrage": 96502,
+      "volume": 12.04,
+      "prix": 18.05
+    },
+    {
+      "date": "2018-02-16",
+      "kilometrage": 96670,
+      "volume": 40.71,
+      "prix": 60.33
+    },
+    {
+      "date": "2018-02-26",
+      "kilometrage": 97164,
+      "volume": 38.35,
+      "prix": 56.95
+    },
+    {
+      "date": "2018-03-06",
+      "kilometrage": 97725,
+      "volume": 41.7,
+      "prix": 61.8
+    },
+    {
+      "date": "2018-03-20",
+      "kilometrage": 98259,
+      "volume": 42.21,
+      "prix": 62.01
+    },
+    {
+      "date": "2018-04-04",
+      "kilometrage": 98810,
+      "volume": 42.35,
+      "prix": 63.31
+    },
+    {
+      "date": "2018-04-16",
+      "kilometrage": 99381,
+      "volume": 41.69,
+      "prix": 62.91
+    },
+    {
+      "date": "2018-04-25",
+      "kilometrage": 99936,
+      "volume": 39.66,
+      "prix": 60.05
+    },
+    {
+      "date": "2018-05-03",
+      "kilometrage": 100650,
+      "volume": 19.95,
+      "prix": 30.6
+    },
+    {
+      "date": "2018-05-19",
+      "kilometrage": 100816,
+      "volume": 42.35,
+      "prix": 66.57
+    },
+    {
+      "date": "2018-06-02",
+      "kilometrage": 101403,
+      "volume": 44.12,
+      "prix": 70.37
+    },
+    {
+      "date": "2018-06-15",
+      "kilometrage": 102021,
+      "volume": 13.04,
+      "prix": 20.01
+    },
+    {
+      "date": "2018-06-18",
+      "kilometrage": 102127,
+      "volume": 38.6,
+      "prix": 60.95
+    },
+    {
+      "date": "2018-06-28",
+      "kilometrage": 102741,
+      "volume": 40.54,
+      "prix": 62.8
+    },
+    {
+      "date": "2018-07-05",
+      "kilometrage": 103206,
+      "volume": 31.25,
+      "prix": 48.5
+    },
+    {
+      "date": "2018-07-16",
+      "kilometrage": 103831,
+      "volume": 44.22,
+      "prix": 68.76
+    },
+    {
+      "date": "2018-08-07",
+      "kilometrage": 104377,
+      "volume": 44.19,
+      "prix": 69.6
+    },
+    {
+      "date": "2018-08-30",
+      "kilometrage": 104949,
+      "volume": 40.9,
+      "prix": 64.5
+    },
+    {
+      "date": "2018-08-31",
+      "kilometrage": 105562,
+      "volume": 43.55,
+      "prix": 69.2
+    },
+    {
+      "date": "2018-09-11",
+      "kilometrage": 105975,
+      "volume": 32.74,
+      "prix": 52.15
+    },
+    {
+      "date": "2018-10-01",
+      "kilometrage": 106483,
+      "volume": 38.61,
+      "prix": 61.16
+    },
+    {
+      "date": "2018-10-14",
+      "kilometrage": 107183,
+      "volume": 37.1,
+      "prix": 59.51
+    },
+    {
+      "date": "2018-10-24",
+      "kilometrage": 107732,
+      "volume": 40.28,
+      "prix": 64.0
+    },
+    {
+      "date": "2018-10-30",
+      "kilometrage": 108001,
+      "volume": 20.83,
+      "prix": 32.62
+    },
+    {
+      "date": "2018-11-02",
+      "kilometrage": 108245,
+      "volume": 15.29,
+      "prix": 24.1
+    },
+    {
+      "date": "2018-11-23",
+      "kilometrage": 109690,
+      "volume": 28.88,
+      "prix": 42.05
+    },
+    {
+      "date": "2018-12-02",
+      "kilometrage": 109872,
+      "volume": 16.48,
+      "prix": 23.55
+    },
+    {
+      "date": "2018-12-11",
+      "kilometrage": 110223,
+      "volume": 27.48,
+      "prix": 40.2
+    },
+    {
+      "date": "2018-12-22",
+      "kilometrage": 110936,
+      "volume": 13.22,
+      "prix": 19.42
+    },
+    {
+      "date": "2018-12-25",
+      "kilometrage": 111334,
+      "volume": 32.0,
+      "prix": 46.72
+    },
+    {
+      "date": "2018-12-27",
+      "kilometrage": 111894,
+      "volume": 38.61,
+      "prix": 56.33
+    },
+    {
+      "date": "2019-01-05",
+      "kilometrage": 112448,
+      "volume": 40.88,
+      "prix": 58.7
+    },
+    {
+      "date": "2019-01-19",
+      "kilometrage": 112850,
+      "volume": 17.69,
+      "prix": 25.6
+    },
+    {
+      "date": "2019-01-22",
+      "kilometrage": 113197,
+      "volume": 40.36,
+      "prix": 58.4
+    },
+    {
+      "date": "2019-02-01",
+      "kilometrage": 113548,
+      "volume": 27.85,
+      "prix": 40.35
+    },
+    {
+      "date": "2019-02-15",
+      "kilometrage": 114081,
+      "volume": 41.51,
+      "prix": 60.4
+    },
+    {
+      "date": "2019-03-01",
+      "kilometrage": 114627,
+      "volume": 42.31,
+      "prix": 63.0
+    },
+    {
+      "date": "2019-03-09",
+      "kilometrage": 115050,
+      "volume": 31.56,
+      "prix": 47.15
+    },
+    {
+      "date": "2019-03-21",
+      "kilometrage": 115590,
+      "volume": 16.68,
+      "prix": 25.0
+    },
+    {
+      "date": "2019-03-26",
+      "kilometrage": 115794,
+      "volume": 42.63,
+      "prix": 65.01
+    },
+    {
+      "date": "2019-04-01",
+      "kilometrage": 116040,
+      "volume": 19.66,
+      "prix": 30.57
+    },
+    {
+      "date": "2019-04-11",
+      "kilometrage": 116431,
+      "volume": 28.45,
+      "prix": 45.38
+    },
+    {
+      "date": "2019-04-21",
+      "kilometrage": 117258,
+      "volume": 40.11,
+      "prix": 64.54
+    },
+    {
+      "date": "2019-05-02",
+      "kilometrage": 117792,
+      "volume": 39.24,
+      "prix": 63.8
+    },
+    {
+      "date": "2019-05-15",
+      "kilometrage": 118400,
+      "volume": 39.3,
+      "prix": 65.0
+    },
+    {
+      "date": "2019-05-22",
+      "kilometrage": 118950,
+      "volume": 42.01,
+      "prix": 68.85
+    },
+    {
+      "date": "2019-06-01",
+      "kilometrage": 119392,
+      "volume": 32.9,
+      "prix": 50.3
+    },
+    {
+      "date": "2019-06-10",
+      "kilometrage": 119928,
+      "volume": 38.88,
+      "prix": 57.5
+    },
+    {
+      "date": "2019-06-24",
+      "kilometrage": 120497,
+      "volume": 42.83,
+      "prix": 67.2
+    },
+    {
+      "date": "2019-07-01",
+      "kilometrage": 120770,
+      "volume": 21.02,
+      "prix": 30.5
+    },
+    {
+      "date": "2019-07-08",
+      "kilometrage": 122245,
+      "volume": 25.24,
+      "prix": 36.9
+    },
+    {
+      "date": "2019-07-13",
+      "kilometrage": 122700,
+      "volume": 31.21,
+      "prix": 46.0
+    },
+    {
+      "date": "2019-07-24",
+      "kilometrage": 123067,
+      "volume": 13.64,
+      "prix": 20.02
+    },
+    {
+      "date": "2019-07-28",
+      "kilometrage": 123508,
+      "volume": 17.03,
+      "prix": 25.0
+    },
+    {
+      "date": "2019-07-29",
+      "kilometrage": 123720,
+      "volume": 24.15,
+      "prix": 35.45
+    },
+    {
+      "date": "2019-08-10",
+      "kilometrage": 124089,
+      "volume": 42.52,
+      "prix": 62.04
+    },
+    {
+      "date": "2019-08-14",
+      "kilometrage": 124394,
+      "volume": 20.73,
+      "prix": 30.0
+    },
+    {
+      "date": "2019-08-25",
+      "kilometrage": 124895,
+      "volume": 38.03,
+      "prix": 54.65
+    },
+    {
+      "date": "2019-09-05",
+      "kilometrage": 125429,
+      "volume": 38.7,
+      "prix": 55.3
+    },
+    {
+      "date": "2019-09-17",
+      "kilometrage": 125953,
+      "volume": 39.5,
+      "prix": 60.0
+    },
+    {
+      "date": "2019-09-28",
+      "kilometrage": 126400,
+      "volume": 35.09,
+      "prix": 54.0
+    },
+    {
+      "date": "2019-10-12",
+      "kilometrage": 126971,
+      "volume": 43.32,
+      "prix": 62.34
+    },
+    {
+      "date": "2019-10-18",
+      "kilometrage": 127394,
+      "volume": 20.08,
+      "prix": 28.9
+    },
+    {
+      "date": "2019-10-26",
+      "kilometrage": 127715,
+      "volume": 35.27,
+      "prix": 50.75
+    },
+    {
+      "date": "2019-11-01",
+      "kilometrage": 127993,
+      "volume": 19.28,
+      "prix": 27.8
+    },
+    {
+      "date": "2019-11-15",
+      "kilometrage": 128504,
+      "volume": 42.31,
+      "prix": 61.1
+    },
+    {
+      "date": "2019-11-26",
+      "kilometrage": 129023,
+      "volume": 41.75,
+      "prix": 60.7
+    },
+    {
+      "date": "2019-12-01",
+      "kilometrage": 129179,
+      "volume": 10.69,
+      "prix": 16.45
+    },
+    {
+      "date": "2019-12-06",
+      "kilometrage": 129393,
+      "volume": 18.78,
+      "prix": 28.9
+    },
+    {
+      "date": "2019-12-11",
+      "kilometrage": 129685,
+      "volume": 21.98,
+      "prix": 32.2
+    },
+    {
+      "date": "2019-12-18",
+      "kilometrage": 129982,
+      "volume": 24.95,
+      "prix": 36.65
+    },
+    {
+      "date": "2019-12-23",
+      "kilometrage": 130270,
+      "volume": 23.92,
+      "prix": 35.15
+    },
+    {
+      "date": "2019-12-30",
+      "kilometrage": 130572,
+      "volume": 23.09,
+      "prix": 33.8
+    },
+    {
+      "date": "2020-01-07",
+      "kilometrage": 130818,
+      "volume": 19.2,
+      "prix": 28.55
+    },
+    {
+      "date": "2020-01-15",
+      "kilometrage": 131297,
+      "volume": 36.79,
+      "prix": 54.89
+    },
+    {
+      "date": "2020-01-28",
+      "kilometrage": 131821,
+      "volume": 39.97,
+      "prix": 59.0
+    },
+    {
+      "date": "2020-02-05",
+      "kilometrage": 132343,
+      "volume": 39.49,
+      "prix": 57.85
+    },
+    {
+      "date": "2020-02-18",
+      "kilometrage": 132857,
+      "volume": 38.07,
+      "prix": 54.4
+    },
+    {
+      "date": "2020-03-02",
+      "kilometrage": 133380,
+      "volume": 38.99,
+      "prix": 55.4
+    },
+    {
+      "date": "2020-03-16",
+      "kilometrage": 133919,
+      "volume": 41.05,
+      "prix": 54.02
+    },
+    {
+      "date": "2020-05-13",
+      "kilometrage": 134480,
+      "volume": 42.36,
+      "prix": 49.1
+    },
+    {
+      "date": "2020-05-28",
+      "kilometrage": 135031,
+      "volume": 41.82,
+      "prix": 51.4
+    },
+    {
+      "date": "2020-06-11",
+      "kilometrage": 135581,
+      "volume": 39.94,
+      "prix": 50.0
+    },
+    {
+      "date": "2020-06-24",
+      "kilometrage": 136137,
+      "volume": 41.92,
+      "prix": 54.45
+    },
+    {
+      "date": "2020-07-08",
+      "kilometrage": 136694,
+      "volume": 40.24,
+      "prix": 52.51
+    },
+    {
+      "date": "2020-07-23",
+      "kilometrage": 137288,
+      "volume": 41.75,
+      "prix": 54.9
+    },
+    {
+      "date": "2020-08-05",
+      "kilometrage": 137855,
+      "volume": 40.21,
+      "prix": 51.55
+    },
+    {
+      "date": "2020-08-07",
+      "kilometrage": 138407,
+      "volume": 38.98,
+      "prix": 49.5
+    },
+    {
+      "date": "2020-08-24",
+      "kilometrage": 138547,
+      "volume": 11.45,
+      "prix": 15.23
+    },
+    {
+      "date": "2020-09-03",
+      "kilometrage": 138945,
+      "volume": 29.07,
+      "prix": 38.84
+    },
+    {
+      "date": "2020-09-13",
+      "kilometrage": 139474,
+      "volume": 39.12,
+      "prix": 53.95
+    },
+    {
+      "date": "2020-09-23",
+      "kilometrage": 139861,
+      "volume": 28.21,
+      "prix": 39.04
+    },
+    {
+      "date": "2020-09-29",
+      "kilometrage": 140272,
+      "volume": 29.14,
+      "prix": 39.4
+    },
+    {
+      "date": "2020-10-12",
+      "kilometrage": 140782,
+      "volume": 34.89,
+      "prix": 47.9
+    },
+    {
+      "date": "2020-10-25",
+      "kilometrage": 141290,
+      "volume": 34.08,
+      "prix": 47.0
+    },
+    {
+      "date": "2020-10-29",
+      "kilometrage": 141740,
+      "volume": 31.78,
+      "prix": 43.7
+    },
+    {
+      "date": "2020-11-27",
+      "kilometrage": 142220,
+      "volume": 37.04,
+      "prix": 50.0
+    },
+    {
+      "date": "2020-12-14",
+      "kilometrage": 142695,
+      "volume": 37.6,
+      "prix": 51.85
+    },
+    {
+      "date": "2020-12-30",
+      "kilometrage": 143188,
+      "volume": 40.2,
+      "prix": 56.0
+    },
+    {
+      "date": "2021-01-16",
+      "kilometrage": 143670,
+      "volume": 37.04,
+      "prix": 53.3
+    },
+    {
+      "date": "2021-01-31",
+      "kilometrage": 144098,
+      "volume": 33.84,
+      "prix": 48.7
+    },
+    {
+      "date": "2021-02-17",
+      "kilometrage": 144627,
+      "volume": 41.19,
+      "prix": 60.3
+    },
+    {
+      "date": "2021-03-04",
+      "kilometrage": 145120,
+      "volume": 38.6,
+      "prix": 58.25
+    },
+    {
+      "date": "2021-03-13",
+      "kilometrage": 145681,
+      "volume": 41.02,
+      "prix": 63.05
+    },
+    {
+      "date": "2021-03-26",
+      "kilometrage": 146168,
+      "volume": 36.08,
+      "prix": 54.99
+    },
+    {
+      "date": "2021-04-09",
+      "kilometrage": 146738,
+      "volume": 42.4,
+      "prix": 65.25
+    },
+    {
+      "date": "2021-04-21",
+      "kilometrage": 147177,
+      "volume": 33.46,
+      "prix": 52.0
+    },
+    {
+      "date": "2021-05-21",
+      "kilometrage": 147692,
+      "volume": 39.06,
+      "prix": 60.5
+    },
+    {
+      "date": "2021-06-07",
+      "kilometrage": 148206,
+      "volume": 38.69,
+      "prix": 60.7
+    },
+    {
+      "date": "2021-06-21",
+      "kilometrage": 148726,
+      "volume": 40.62,
+      "prix": 63.85
+    },
+    {
+      "date": "2021-07-01",
+      "kilometrage": 149268,
+      "volume": 38.72,
+      "prix": 61.8
+    },
+    {
+      "date": "2021-07-11",
+      "kilometrage": 149862,
+      "volume": 40.39,
+      "prix": 64.7
+    },
+    {
+      "date": "2021-07-15",
+      "kilometrage": 150023,
+      "volume": 12.65,
+      "prix": 20.35
+    },
+    {
+      "date": "2021-07-29",
+      "kilometrage": 150570,
+      "volume": 38.07,
+      "prix": 62.02
+    },
+    {
+      "date": "2021-08-11",
+      "kilometrage": 151100,
+      "volume": 39.36,
+      "prix": 64.9
+    },
+    {
+      "date": "2021-08-27",
+      "kilometrage": 151674,
+      "volume": 41.85,
+      "prix": 68.59
+    },
+    {
+      "date": "2021-09-13",
+      "kilometrage": 152240,
+      "volume": 40.79,
+      "prix": 66.85
+    },
+    {
+      "date": "2021-09-21",
+      "kilometrage": 152606,
+      "volume": 25.46,
+      "prix": 41.73
+    },
+    {
+      "date": "2021-10-01",
+      "kilometrage": 153125,
+      "volume": 39.53,
+      "prix": 65.3
+    },
+    {
+      "date": "2021-10-13",
+      "kilometrage": 153596,
+      "volume": 37.69,
+      "prix": 64.0
+    },
+    {
+      "date": "2021-10-18",
+      "kilometrage": 153995,
+      "volume": 27.4,
+      "prix": 46.8
+    },
+    {
+      "date": "2021-10-23",
+      "kilometrage": 154200,
+      "volume": 15.91,
+      "prix": 26.2
+    },
+    {
+      "date": "2021-10-30",
+      "kilometrage": 154555,
+      "volume": 25.89,
+      "prix": 42.77
+    },
+    {
+      "date": "2021-11-13",
+      "kilometrage": 154953,
+      "volume": 31.43,
+      "prix": 53.71
+    },
+    {
+      "date": "2021-11-23",
+      "kilometrage": 155301,
+      "volume": 26.98,
+      "prix": 46.0
+    },
+    {
+      "date": "2021-12-05",
+      "kilometrage": 155717,
+      "volume": 33.67,
+      "prix": 56.2
+    },
+    {
+      "date": "2021-12-10",
+      "kilometrage": 156095,
+      "volume": 27.3,
+      "prix": 46.0
+    },
+    {
+      "date": "2021-12-16",
+      "kilometrage": 156481,
+      "volume": 28.29,
+      "prix": 47.7
+    },
+    {
+      "date": "2021-12-23",
+      "kilometrage": 156783,
+      "volume": 23.98,
+      "prix": 40.0
+    },
+    {
+      "date": "2022-01-05",
+      "kilometrage": 157151,
+      "volume": 29.34,
+      "prix": 50.61
+    },
+    {
+      "date": "2022-01-12",
+      "kilometrage": 157480,
+      "volume": 23.94,
+      "prix": 41.75
+    },
+    {
+      "date": "2022-01-15",
+      "kilometrage": 157803,
+      "volume": 22.12,
+      "prix": 38.8
+    },
+    {
+      "date": "2022-01-27",
+      "kilometrage": 158293,
+      "volume": 11.27,
+      "prix": 20.0
+    },
+    {
+      "date": "2022-01-30",
+      "kilometrage": 158381,
+      "volume": 30.47,
+      "prix": 53.6
+    },
+    {
+      "date": "2022-02-08",
+      "kilometrage": 158694,
+      "volume": 24.8,
+      "prix": 44.12
+    },
+    {
+      "date": "2022-02-11",
+      "kilometrage": 158942,
+      "volume": 18.96,
+      "prix": 34.11
+    },
+    {
+      "date": "2022-02-25",
+      "kilometrage": 159368,
+      "volume": 34.09,
+      "prix": 64.5
+    },
+    {
+      "date": "2022-03-06",
+      "kilometrage": 159663,
+      "volume": 20.57,
+      "prix": 40.5
+    },
+    {
+      "date": "2022-03-10",
+      "kilometrage": 159883,
+      "volume": 16.89,
+      "prix": 34.54
+    },
+    {
+      "date": "2022-03-15",
+      "kilometrage": 160128,
+      "volume": 21.56,
+      "prix": 40.62
+    },
+    {
+      "date": "2022-03-23",
+      "kilometrage": 160397,
+      "volume": 22.14,
+      "prix": 44.1
+    },
+    {
+      "date": "2022-04-01",
+      "kilometrage": 160841,
+      "volume": 33.89,
+      "prix": 61.85
+    },
+    {
+      "date": "2022-04-12",
+      "kilometrage": 161278,
+      "volume": 34.15,
+      "prix": 61.4
+    },
+    {
+      "date": "2022-04-22",
+      "kilometrage": 161713,
+      "volume": 32.68,
+      "prix": 59.44
+    },
+    {
+      "date": "2022-04-30",
+      "kilometrage": 161953,
+      "volume": 18.49,
+      "prix": 34.8
+    },
+    {
+      "date": "2022-05-01",
+      "kilometrage": 162234,
+      "volume": 17.48,
+      "prix": 32.9
+    },
+    {
+      "date": "2022-05-13",
+      "kilometrage": 162754,
+      "volume": 40.48,
+      "prix": 78.25
+    },
+    {
+      "date": "2022-05-21",
+      "kilometrage": 163274,
+      "volume": 39.6,
+      "prix": 79.75
+    },
+    {
+      "date": "2022-05-31",
+      "kilometrage": 163827,
+      "volume": 40.54,
+      "prix": 85.5
+    },
+    {
+      "date": "2022-06-13",
+      "kilometrage": 164411,
+      "volume": 22.46,
+      "prix": 49.5
+    },
+    {
+      "date": "2022-06-18",
+      "kilometrage": 164662,
+      "volume": 37.6,
+      "prix": 81.55
+    },
+    {
+      "date": "2022-06-30",
+      "kilometrage": 165151,
+      "volume": 38.88,
+      "prix": 82.7
+    },
+    {
+      "date": "2022-07-05",
+      "kilometrage": 165411,
+      "volume": 12.1,
+      "prix": 25.4
+    },
+    {
+      "date": "2022-07-08",
+      "kilometrage": 165540,
+      "volume": 18.17,
+      "prix": 37.5
+    },
+    {
+      "date": "2022-07-16",
+      "kilometrage": 165973,
+      "volume": 33.45,
+      "prix": 66.97
+    },
+    {
+      "date": "2022-07-22",
+      "kilometrage": 166202,
+      "volume": 13.01,
+      "prix": 25.07
+    },
+    {
+      "date": "2022-08-01",
+      "kilometrage": 166582,
+      "volume": 15.44,
+      "prix": 29.52
+    },
+    {
+      "date": "2022-08-06",
+      "kilometrage": 166840,
+      "volume": 38.77,
+      "prix": 72.0
+    },
+    {
+      "date": "2022-08-13",
+      "kilometrage": 167275,
+      "volume": 31.46,
+      "prix": 56.91
+    },
+    {
+      "date": "2022-08-20",
+      "kilometrage": 167718,
+      "volume": 33.96,
+      "prix": 61.26
+    },
+    {
+      "date": "2022-09-01",
+      "kilometrage": 168288,
+      "volume": 31.79,
+      "prix": 49.66
+    },
+    {
+      "date": "2022-09-01",
+      "kilometrage": 167846,
+      "volume": 9.07,
+      "prix": 14.17
+    },
+    {
+      "date": "2022-09-09",
+      "kilometrage": 168621,
+      "volume": 26.35,
+      "prix": 40.05
+    },
+    {
+      "date": "2022-09-21",
+      "kilometrage": 168857,
+      "volume": 18.96,
+      "prix": 26.6
+    },
+    {
+      "date": "2022-10-01",
+      "kilometrage": 169199,
+      "volume": 25.41,
+      "prix": 37.0
+    },
+    {
+      "date": "2022-10-07",
+      "kilometrage": 169475,
+      "volume": 21.04,
+      "prix": 31.6
+    },
+    {
+      "date": "2022-10-11",
+      "kilometrage": 169602,
+      "volume": 10.49,
+      "prix": 18.66
+    },
+    {
+      "date": "2022-10-13",
+      "kilometrage": 169722,
+      "volume": 8.92,
+      "prix": 16.14
+    },
+    {
+      "date": "2022-10-17",
+      "kilometrage": 169896,
+      "volume": 11.83,
+      "prix": 20.57
+    },
+    {
+      "date": "2022-10-24",
+      "kilometrage": 170102,
+      "volume": 18.04,
+      "prix": 26.95
+    },
+    {
+      "date": "2022-10-28",
+      "kilometrage": 170242,
+      "volume": 10.69,
+      "prix": 17.01
+    },
+    {
+      "date": "2022-11-10",
+      "kilometrage": 170714,
+      "volume": 38.42,
+      "prix": 61.74
+    },
+    {
+      "date": "2022-11-14",
+      "kilometrage": 170911,
+      "volume": 12.79,
+      "prix": 21.99
+    },
+    {
+      "date": "2022-11-24",
+      "kilometrage": 171301,
+      "volume": 33.41,
+      "prix": 58.9
+    },
+    {
+      "date": "2022-12-06",
+      "kilometrage": 171759,
+      "volume": 36.19,
+      "prix": 62.21
+    },
+    {
+      "date": "2022-12-09",
+      "kilometrage": 171913,
+      "volume": 14.18,
+      "prix": 23.61
+    },
+    {
+      "date": "2022-12-13",
+      "kilometrage": 172135,
+      "volume": 18.51,
+      "prix": 30.52
+    },
+    {
+      "date": "2022-12-23",
+      "kilometrage": 172541,
+      "volume": 35.47,
+      "prix": 59.98
+    },
+    {
+      "date": "2022-12-31",
+      "kilometrage": 172910,
+      "volume": 28.84,
+      "prix": 49.0
+    },
+    {
+      "date": "2023-01-11",
+      "kilometrage": 173380,
+      "volume": 13.22,
+      "prix": 25.1
+    },
+    {
+      "date": "2023-01-15",
+      "kilometrage": 173530,
+      "volume": 35.85,
+      "prix": 67.0
+    },
+    {
+      "date": "2023-01-26",
+      "kilometrage": 173919,
+      "volume": 31.9,
+      "prix": 60.9
+    },
+    {
+      "date": "2023-01-30",
+      "kilometrage": 174056,
+      "volume": 11.43,
+      "prix": 22.16
+    },
+    {
+      "date": "2023-02-14",
+      "kilometrage": 174566,
+      "volume": 41.13,
+      "prix": 77.0
+    },
+    {
+      "date": "2023-02-28",
+      "kilometrage": 175067,
+      "volume": 39.16,
+      "prix": 73.19
+    },
+    {
+      "date": "2023-03-08",
+      "kilometrage": 175328,
+      "volume": 22.3,
+      "prix": 42.79
+    },
+    {
+      "date": "2023-03-19",
+      "kilometrage": 175700,
+      "volume": 27.17,
+      "prix": 51.32
+    },
+    {
+      "date": "2023-03-20",
+      "kilometrage": 175842,
+      "volume": 11.4,
+      "prix": 22.09
+    },
+    {
+      "date": "2023-03-24",
+      "kilometrage": 175955,
+      "volume": 8.53,
+      "prix": 16.37
+    },
+    {
+      "date": "2023-04-04",
+      "kilometrage": 176310,
+      "volume": 28.65,
+      "prix": 55.55
+    },
+    {
+      "date": "2023-04-12",
+      "kilometrage": 176760,
+      "volume": 36.17,
+      "prix": 70.5
+    },
+    {
+      "date": "2023-04-20",
+      "kilometrage": 177106,
+      "volume": 27.18,
+      "prix": 53.25
+    },
+    {
+      "date": "2023-04-29",
+      "kilometrage": 177600,
+      "volume": 36.86,
+      "prix": 70.0
+    },
+    {
+      "date": "2023-05-09",
+      "kilometrage": 178082,
+      "volume": 35.55,
+      "prix": 66.09
+    },
+    {
+      "date": "2023-05-20",
+      "kilometrage": 178570,
+      "volume": 37.86,
+      "prix": 70.0
+    },
+    {
+      "date": "2023-05-27",
+      "kilometrage": 178907,
+      "volume": 25.82,
+      "prix": 48.0
+    },
+    {
+      "date": "2023-06-10",
+      "kilometrage": 179408,
+      "volume": 37.71,
+      "prix": 70.1
+    },
+    {
+      "date": "2023-06-22",
+      "kilometrage": 179932,
+      "volume": 41.48,
+      "prix": 77.94
+    },
+    {
+      "date": "2023-07-03",
+      "kilometrage": 180397,
+      "volume": 33.01,
+      "prix": 60.05
+    },
+    {
+      "date": "2023-07-06",
+      "kilometrage": 180585,
+      "volume": 16.27,
+      "prix": 29.6
+    },
+    {
+      "date": "2023-07-18",
+      "kilometrage": 181086,
+      "volume": 37.65,
+      "prix": 68.0
+    },
+    {
+      "date": "2023-07-20",
+      "kilometrage": 181172,
+      "volume": 5.97,
+      "prix": 10.78
+    },
+    {
+      "date": "2023-07-30",
+      "kilometrage": 181473,
+      "volume": 24.47,
+      "prix": 45.0
+    },
+    {
+      "date": "2023-08-09",
+      "kilometrage": 181903,
+      "volume": 38.24,
+      "prix": 73.0
+    },
+    {
+      "date": "2023-08-20",
+      "kilometrage": 182335,
+      "volume": 18.93,
+      "prix": 35.0
+    },
+    {
+      "date": "2023-08-25",
+      "kilometrage": 182534,
+      "volume": 32.74,
+      "prix": 62.5
+    },
+    {
+      "date": "2023-09-02",
+      "kilometrage": 182953,
+      "volume": 36.61,
+      "prix": 70.0
+    },
+    {
+      "date": "2023-09-12",
+      "kilometrage": 183433,
+      "volume": 39.79,
+      "prix": 78.35
+    },
+    {
+      "date": "2023-09-18",
+      "kilometrage": 183938,
+      "volume": 35.73,
+      "prix": 70.0
+    },
+    {
+      "date": "2023-09-27",
+      "kilometrage": 184368,
+      "volume": 31.65,
+      "prix": 62.0
+    },
+    {
+      "date": "2023-09-30",
+      "kilometrage": 184456,
+      "volume": 14.28,
+      "prix": 27.1
+    },
+    {
+      "date": "2023-10-04",
+      "kilometrage": 184790,
+      "volume": 17.61,
+      "prix": 34.15
+    },
+    {
+      "date": "2023-10-10",
+      "kilometrage": 185265,
+      "volume": 32.63,
+      "prix": 61.7
+    },
+    {
+      "date": "2023-10-15",
+      "kilometrage": 185627,
+      "volume": 25.35,
+      "prix": 45.55
+    },
+    {
+      "date": "2023-10-19",
+      "kilometrage": 185914,
+      "volume": 21.38,
+      "prix": 39.3
+    },
+    {
+      "date": "2023-10-25",
+      "kilometrage": 186292,
+      "volume": 28.47,
+      "prix": 53.5
+    },
+    {
+      "date": "2023-11-04",
+      "kilometrage": 186715,
+      "volume": 34.21,
+      "prix": 63.6
+    },
+    {
+      "date": "2023-11-10",
+      "kilometrage": 186962,
+      "volume": 22.01,
+      "prix": 39.6
+    },
+    {
+      "date": "2023-11-18",
+      "kilometrage": 187346,
+      "volume": 33.17,
+      "prix": 60.5
+    },
+    {
+      "date": "2023-11-26",
+      "kilometrage": 187676,
+      "volume": 25.84,
+      "prix": 46.01
+    },
+    {
+      "date": "2023-12-02",
+      "kilometrage": 187945,
+      "volume": 23.27,
+      "prix": 41.4
+    },
+    {
+      "date": "2023-12-15",
+      "kilometrage": 188568,
+      "volume": 34.48,
+      "prix": 61.0
+    },
+    {
+      "date": "2023-12-23",
+      "kilometrage": 188923,
+      "volume": 30.19,
+      "prix": 52.5
+    },
+    {
+      "date": "2023-12-30",
+      "kilometrage": 189240,
+      "volume": 24.9,
+      "prix": 44.55
+    },
+    {
+      "date": "2024-01-09",
+      "kilometrage": 189661,
+      "volume": 35.13,
+      "prix": 62.5
+    },
+    {
+      "date": "2024-01-21",
+      "kilometrage": 190438,
+      "volume": 29.21,
+      "prix": 52.26
+    },
+    {
+      "date": "2024-01-28",
+      "kilometrage": 190813,
+      "volume": 31.74,
+      "prix": 57.1
+    },
+    {
+      "date": "2024-02-05",
+      "kilometrage": 191250,
+      "volume": 34.95,
+      "prix": 63.92
+    },
+    {
+      "date": "2024-02-08",
+      "kilometrage": 191619,
+      "volume": 28.67,
+      "prix": 52.15
+    },
+    {
+      "date": "2024-02-14",
+      "kilometrage": 192033,
+      "volume": 33.54,
+      "prix": 61.34
+    },
+    {
+      "date": "2024-02-20",
+      "kilometrage": 192420,
+      "volume": 30.06,
+      "prix": 55.28
+    },
+    {
+      "date": "2024-02-24",
+      "kilometrage": 192856,
+      "volume": 5.4,
+      "prix": 10.04
+    },
+    {
+      "date": "2024-02-24",
+      "kilometrage": 192800,
+      "volume": 32.81,
+      "prix": 60.01
+    },
+    {
+      "date": "2024-03-03",
+      "kilometrage": 193278,
+      "volume": 32.28,
+      "prix": 59.36
+    },
+    {
+      "date": "2024-03-11",
+      "kilometrage": 193690,
+      "volume": 15.81,
+      "prix": 30.02
+    },
+    {
+      "date": "2024-03-13",
+      "kilometrage": 193901,
+      "volume": 32.29,
+      "prix": 59.7
+    },
+    {
+      "date": "2024-03-19",
+      "kilometrage": 194191,
+      "volume": 23.14,
+      "prix": 43.25
+    },
+    {
+      "date": "2024-03-27",
+      "kilometrage": 194662,
+      "volume": 36.5,
+      "prix": 68.58
+    },
+    {
+      "date": "2024-04-08",
+      "kilometrage": 195082,
+      "volume": 35.15,
+      "prix": 67.8
+    },
+    {
+      "date": "2024-04-16",
+      "kilometrage": 195498,
+      "volume": 33.55,
+      "prix": 65.05
+    },
+    {
+      "date": "2024-04-26",
+      "kilometrage": 195920,
+      "volume": 34.71,
+      "prix": 67.65
+    },
+    {
+      "date": "2024-05-05",
+      "kilometrage": 196333,
+      "volume": 33.3,
+      "prix": 64.9
+    },
+    {
+      "date": "2024-05-13",
+      "kilometrage": 196681,
+      "volume": 28.56,
+      "prix": 54.81
+    },
+    {
+      "date": "2024-05-20",
+      "kilometrage": 197113,
+      "volume": 35.23,
+      "prix": 66.55
+    },
+    {
+      "date": "2024-05-31",
+      "kilometrage": 197565,
+      "volume": 37.89,
+      "prix": 70.44
+    },
+    {
+      "date": "2024-06-08",
+      "kilometrage": 198057,
+      "volume": 37.9,
+      "prix": 69.7
+    },
+    {
+      "date": "2024-06-19",
+      "kilometrage": 198505,
+      "volume": 36.56,
+      "prix": 67.6
+    },
+    {
+      "date": "2024-06-28",
+      "kilometrage": 198960,
+      "volume": 37.29,
+      "prix": 68.95
+    },
+    {
+      "date": "2024-07-08",
+      "kilometrage": 199402,
+      "volume": 36.65,
+      "prix": 68.5
+    },
+    {
+      "date": "2024-07-18",
+      "kilometrage": 199826,
+      "volume": 36.2,
+      "prix": 67.3
+    },
+    {
+      "date": "2024-07-23",
+      "kilometrage": 199994,
+      "volume": 13.6,
+      "prix": 25.01
+    },
+    {
+      "date": "2024-08-01",
+      "kilometrage": 200404,
+      "volume": 27.19,
+      "prix": 50.0
+    },
+    {
+      "date": "2024-08-07",
+      "kilometrage": 200784,
+      "volume": 3.45,
+      "prix": 6.0
+    },
+    {
+      "date": "2024-08-08",
+      "kilometrage": 200827,
+      "volume": 35.36,
+      "prix": 65.03
+    },
+    {
+      "date": "2024-08-14",
+      "kilometrage": 201205,
+      "volume": 27.97,
+      "prix": 50.6
+    },
+    {
+      "date": "2024-08-24",
+      "kilometrage": 201624,
+      "volume": 34.33,
+      "prix": 62.1
+    },
+    {
+      "date": "2024-09-01",
+      "kilometrage": 201973,
+      "volume": 27.73,
+      "prix": 48.22
+    },
+    {
+      "date": "2024-09-07",
+      "kilometrage": 202473,
+      "volume": 37.45,
+      "prix": 65.5
+    },
+    {
+      "date": "2024-09-10",
+      "kilometrage": 202856,
+      "volume": 30.36,
+      "prix": 52.8
+    },
+    {
+      "date": "2024-09-20",
+      "kilometrage": 203242,
+      "volume": 32.67,
+      "prix": 59.16
+    },
+    {
+      "date": "2024-09-28",
+      "kilometrage": 203580,
+      "volume": 28.84,
+      "prix": 49.0
+    },
+    {
+      "date": "2024-10-08",
+      "kilometrage": 204029,
+      "volume": 35.87,
+      "prix": 61.3
+    },
+    {
+      "date": "2024-10-16",
+      "kilometrage": 204452,
+      "volume": 33.74,
+      "prix": 58.0
+    },
+    {
+      "date": "2024-10-23",
+      "kilometrage": 204891,
+      "volume": 36.78,
+      "prix": 65.76
+    },
+    {
+      "date": "2024-11-02",
+      "kilometrage": 205322,
+      "volume": 34.64,
+      "prix": 59.55
+    },
+    {
+      "date": "2024-11-11",
+      "kilometrage": 205684,
+      "volume": 31.81,
+      "prix": 55.0
+    },
+    {
+      "date": "2024-11-16",
+      "kilometrage": 206085,
+      "volume": 31.34,
+      "prix": 54.5
+    },
+    {
+      "date": "2024-11-27",
+      "kilometrage": 206511,
+      "volume": 35.53,
+      "prix": 62.5
+    },
+    {
+      "date": "2024-12-04",
+      "kilometrage": 206855,
+      "volume": 28.6,
+      "prix": 50.02
+    },
+    {
+      "date": "2024-12-13",
+      "kilometrage": 207167,
+      "volume": 28.38,
+      "prix": 49.35
+    },
+    {
+      "date": "2024-12-20",
+      "kilometrage": 207544,
+      "volume": 32.46,
+      "prix": 57.1
+    },
+    {
+      "date": "2025-01-09",
+      "kilometrage": 208335,
+      "volume": 36.13,
+      "prix": 65.0
+    },
+    {
+      "date": "2025-01-18",
+      "kilometrage": 208740,
+      "volume": 35.76,
+      "prix": 65.05
+    },
+    {
+      "date": "2025-01-31",
+      "kilometrage": 209130,
+      "volume": 34.91,
+      "prix": 63.5
+    },
+    {
+      "date": "2025-02-11",
+      "kilometrage": 209568,
+      "volume": 37.44,
+      "prix": 68.1
+    },
+    {
+      "date": "2025-02-22",
+      "kilometrage": 209996,
+      "volume": 35.91,
+      "prix": 64.6
+    },
+    {
+      "date": "2025-02-28",
+      "kilometrage": 210225,
+      "volume": 19.7,
+      "prix": 35.64
+    },
+    {
+      "date": "2025-03-06",
+      "kilometrage": 210492,
+      "volume": 23.33,
+      "prix": 41.5
+    },
+    {
+      "date": "2025-03-10",
+      "kilometrage": 210816,
+      "volume": 23.82,
+      "prix": 41.9
+    },
+    {
+      "date": "2025-03-15",
+      "kilometrage": 211272,
+      "volume": 34.79,
+      "prix": 60.5
+    },
+    {
+      "date": "2025-03-23",
+      "kilometrage": 211665,
+      "volume": 34.54,
+      "prix": 60.41
+    },
+    {
+      "date": "2025-04-01",
+      "kilometrage": 212030,
+      "volume": 31.61,
+      "prix": 55.6
+    },
+    {
+      "date": "2025-04-09",
+      "kilometrage": 212414,
+      "volume": 32.33,
+      "prix": 56.55
+    },
+    {
+      "date": "2025-04-17",
+      "kilometrage": 212848,
+      "volume": 35.46,
+      "prix": 60.25
+    }
+  ]
+}

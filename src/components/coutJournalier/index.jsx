@@ -87,7 +87,7 @@ function CoutJournalier({ vehicule }) {
               <XAxis dataKey="date" />
               <YAxis domain={['auto', 'auto']} unit="€" />
               <Legend />
-              <Line dataKey="cout" stroke="#D96F4E" name="Coût journalier" />
+              <Line dataKey="cout" stroke="#D96F4E" name="Coût journalier" dot={false} />
             </LineChart>
           </ResponsiveContainer>
         ) : (
