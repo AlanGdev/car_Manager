@@ -1,5 +1,5 @@
 import './styles/bootstrap.scss'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/home'
 import VehiculePage from './pages/vehiculePage'
 import Header from './components/header'
