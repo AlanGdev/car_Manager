@@ -8,7 +8,7 @@ import Footer from './components/footer'
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/car_Manager">
         <div className="d-flex flex-column min-vh-100">
           <Header />
           <Routes>
