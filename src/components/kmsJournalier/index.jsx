@@ -61,9 +61,9 @@ function KmsJournalier({ vehicule }) {
                 {kmsJournalier.length > 1 &&
                 kmsJournalier[kmsJournalier.length - 1].kilometrage <
                   kmsJournalier[kmsJournalier.length - 2].kilometrage ? (
-                  <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
+                  <p className="text-success text-center fw-bold">En dessous de la moyenne !</p>
                 ) : (
-                  <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
+                  <p className="text-danger text-center fw-bold">Au dessus de la moyenne...</p>
                 )}
               </div>
               <div className="text-end mx-2">

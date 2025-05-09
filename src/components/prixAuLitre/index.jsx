@@ -76,9 +76,9 @@ function PrixAuLitre({ vehicule }) {
                   {prixAuLitre.length > 1 &&
                   prixAuLitre[prixAuLitre.length - 1].prixMoyen <
                     prixAuLitre[prixAuLitre.length - 2].prixMoyen ? (
-                    <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
+                    <p className="text-success text-center fw-bold">En dessous de la moyenne !</p>
                   ) : prixAuLitre.length > 1 ? (
-                    <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
+                    <p className="text-danger text-center fw-bold">Au dessus de la moyenne...</p>
                   ) : null}
                 </div>
               </div>

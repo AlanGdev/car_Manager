@@ -1,0 +1,28 @@
+{
+  "params": {
+    "marque": "Honda",
+    "modele": "Civic sport",
+    "immatriculation": "EK-593-AJ",
+    "carburant": "essence"
+  },
+  "pleins": [
+    {
+      "date": "2017-04-01",
+      "kilometrage": 78464,
+      "volume": 40.4,
+      "prix": 56.76
+    },
+    {
+      "date": "2017-04-01",
+      "kilometrage": 78970,
+      "volume": 38.87,
+      "prix": 55.0
+    },
+    {
+      "date": "2017-05-01",
+      "kilometrage": 79979,
+      "volume": 41.74,
+      "prix": 59.35
+    }
+  ]
+}

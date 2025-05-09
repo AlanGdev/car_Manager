@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Card, Button } from 'react-bootstrap'
-function HistoPleins({ pleins, suppressionPlein }) {
+
+function HistoPleins({ vehicule, suppressionPlein }) {
+  const pleins = vehicule.pleins
   const pleinsTries = pleins.sort((a, b) => {
     return a.date !== b.date ? new Date(a.date) - new Date(b.date) : a.kilometrage - b.kilometrage
   })

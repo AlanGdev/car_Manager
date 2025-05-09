@@ -32,15 +32,15 @@
     },
     {
       "date": "2017-04-01",
-      "kilometrage": 78970,
-      "volume": 38.87,
-      "prix": 55.0
-    },
-    {
-      "date": "2017-04-01",
       "kilometrage": 78464,
       "volume": 40.4,
       "prix": 56.76
+    },
+    {
+      "date": "2017-04-01",
+      "kilometrage": 78970,
+      "volume": 38.87,
+      "prix": 55.0
     },
     {
       "date": "2017-04-22",
@@ -200,7 +200,7 @@
     },
     {
       "date": "2017-11-13",
-      "kilometrage": 90608,
+      "kilometrage": 91608,
       "volume": 33.1,
       "prix": 47.8
     },
@@ -1220,15 +1220,15 @@
     },
     {
       "date": "2022-09-01",
-      "kilometrage": 168288,
-      "volume": 31.79,
-      "prix": 49.66
-    },
-    {
-      "date": "2022-09-01",
       "kilometrage": 167846,
       "volume": 9.07,
       "prix": 14.17
+    },
+    {
+      "date": "2022-09-01",
+      "kilometrage": 168288,
+      "volume": 31.79,
+      "prix": 49.66
     },
     {
       "date": "2022-09-09",
@@ -1646,15 +1646,15 @@
     },
     {
       "date": "2024-02-24",
-      "kilometrage": 192856,
-      "volume": 5.4,
-      "prix": 10.04
-    },
-    {
-      "date": "2024-02-24",
       "kilometrage": 192800,
       "volume": 32.81,
       "prix": 60.01
+    },
+    {
+      "date": "2024-02-24",
+      "kilometrage": 192856,
+      "volume": 5.4,
+      "prix": 10.04
     },
     {
       "date": "2024-03-03",

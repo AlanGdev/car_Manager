@@ -66,9 +66,9 @@ function CoutJournalier({ vehicule }) {
                 {coutJournalier.length > 1 &&
                 coutJournalier[coutJournalier.length - 1].cout <
                   coutJournalier[coutJournalier.length - 2].cout ? (
-                  <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
+                  <p className="text-success text-center fw-bold">En dessous de la moyenne !</p>
                 ) : (
-                  <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
+                  <p className="text-danger text-center fw-bold">Au dessus de la moyenne...</p>
                 )}
               </div>
               <div className="text-end mx-2">

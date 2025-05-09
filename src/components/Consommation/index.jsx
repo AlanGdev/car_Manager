@@ -1,6 +1,15 @@
 import { useEffect, useState } from 'react'
 import { Container, Card, Button, Row, Col } from 'react-bootstrap'
-import { ResponsiveContainer, LineChart, CartesianGrid, XAxis, YAxis, Line, Legend } from 'recharts'
+import {
+  ResponsiveContainer,
+  LineChart,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  Line,
+  Legend,
+  Tooltip,
+} from 'recharts'
 import imgConsommation from '../../assets/consoMoyenne.png'
 
 function Consommation({ vehicule }) {
@@ -16,7 +25,7 @@ function Consommation({ vehicule }) {
       if (index > 0) {
         const date = plein.date
         const kilometrage = plein.kilometrage - pleins[index - 1].kilometrage
-        const moyenne = Number(((pleins[index - 1].volume / kilometrage) * 100).toFixed(2))
+        const moyenne = Number(((plein.volume / kilometrage) * 100).toFixed(2))
         tableau.push({ date, moyenne })
       }
     })
@@ -85,9 +94,9 @@ function Consommation({ vehicule }) {
                   {consoMoyenne.length > 1 &&
                   consoMoyenne[consoMoyenne.length - 1].moyenne <
                     consoMoyenne[consoMoyenne.length - 2].moyenne ? (
-                    <p className="text-success text-center fw-bold">Tendance à la baisse !</p>
+                    <p className="text-success text-center fw-bold">En dessous de la moyenne !</p>
                   ) : (
-                    <p className="text-danger text-center fw-bold">Tendance à la hausse...</p>
+                    <p className="text-danger text-center fw-bold">Au dessus de la moyenne...</p>
                   )}
                 </div>
               </div>
@@ -111,6 +120,7 @@ function Consommation({ vehicule }) {
               <XAxis dataKey="date" />
               <YAxis domain={['auto', 'auto']} unit="" />
               <Legend />
+              <Tooltip />
               <Line dataKey="moyennePlein" stroke="#2F5F63" name="Conso plein" dot={false} />
               <Line dataKey="moyenneCumulee" stroke="#FF0000" name="Conso moyenne" dot={false} />
             </LineChart>

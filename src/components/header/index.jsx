@@ -8,7 +8,7 @@ import './index.css'
 function Header() {
   return (
     <>
-      <Navbar expand="lg" className="navbar-vroom bg-body-tertiary m-1">
+      <Navbar expand="lg" className="navbar-vroom bg-body-tertiary m-1 position-relative z-3">
         <Container fluid className="px-0">
           <Navbar.Brand href="#home" className="d-flex align-items-center m-0 p-0">
             <img src={brandImg} alt="Logo VroomTrack" height="120" className="p-2" />
