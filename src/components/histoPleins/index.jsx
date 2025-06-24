@@ -28,9 +28,9 @@ function HistoPleins({ vehicule, suppressionPlein }) {
                 <Card.Text>{`${plein.volume} L. pour ${plein.prix} €`}</Card.Text>
               </Card.Body>
             </Card>
-            <Button className="my-4" variant="outline-warning" onClick={() => suppPlein(index)}>
+            {/*<Button className="my-4" variant="outline-warning" onClick={() => suppPlein(index)}>
               Suppression du plein
-            </Button>
+            </Button>*/}
           </div>
         ))}
     </>
